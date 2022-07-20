@@ -4,11 +4,11 @@ import { HStack, Box, Image, Text } from "@chakra-ui/react";
 export const Card1 = ({ cardData }) => {
   return (
     <Box
-      padding={"20px"}
+      // padding={"20px"}
       adding={"12px"}
       border="1px solid red"
-      w="300px"
-      h="350px"
+      // w="300px"
+      // h="350px"
       textAlign={"left"}
     >
       <Image

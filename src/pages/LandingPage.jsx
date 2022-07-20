@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Image, Flex } from "@chakra-ui/react";
+import { Box, Image, Flex, Divider } from "@chakra-ui/react";
 import BasicSlider from "../components/UsableSliders/BasicSlider";
 import MediumSlider from "../components/UsableSliders/MediumSlider";
 import AdvancedSlider from "../components/UsableSliders/AdvancedSlider";

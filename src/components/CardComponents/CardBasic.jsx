@@ -4,10 +4,10 @@ import { Box, Image, Text, HStack, Flex } from "@chakra-ui/react";
 export const CardBasic = () => {
   return (
     <Box
-      padding={"12px"}
+      // padding={"12px"}
       border="1px solid red"
-      w="300px"
-      h="350px"
+      // w="300px"
+      // h="350px"
       font-family="circularairpro-bold, Helvetica, Arial, sans-serif"
       line-height="25.7143px"
       vertical-align="baseline"

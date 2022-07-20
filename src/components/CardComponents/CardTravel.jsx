@@ -15,8 +15,8 @@ export const CardTravel = () => {
     <Box
       padding={"12px"}
       border="1px solid red"
-      w="350px"
-      h="450px"
+      // w="350px"
+      // h="450px"
       font-family="circularairpro-bold, Helvetica, Arial, sans-serif"
       line-height="25.7143px"
       vertical-align="baseline"
@@ -95,9 +95,10 @@ export const CardTravel = () => {
         <Text color="blue ">Logo</Text>
         <Text color="black.500"> Tripoto Verification Partner</Text>
         <Image
-          margin="5px"
-          w="20px"
-          h="20px"
+          // margin="5px"
+          // w="20px"
+          h="2000px"
+          border={"1px solid blue"}
           src="https://i.pinimg.com/736x/9b/13/b0/9b13b0a9206c8c046c55dca5edcb3ce8.jpg"
         ></Image>
       </Flex>
