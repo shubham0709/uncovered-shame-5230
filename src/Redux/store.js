@@ -1,4 +1,3 @@
-import { reducer as AuthReducer } from "./Auth/reducer"
 import { reducer as DataReducer } from "./DataReducer/reducer";
 import thunk from 'redux-thunk';
 import {
@@ -7,7 +6,6 @@ import {
     applyMiddleware
 } from "redux";
 const rootReducer = combineReducers({
-    AuthReducer: AuthReducer,
     DataReducer: DataReducer
 
 })
