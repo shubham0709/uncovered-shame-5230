@@ -1,19 +1,695 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+  "pages": {
+    "landing": {
+      "spotlight": [
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1658236943_1200px_har_ki_dun.jpg",
+          "title": "goSTOPS",
+          "description": "Trek through Himalayan Forests & Waterfalls under Rs 8,000 with goEXPERIENCES by goSTOPS!"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1653562686_275721311_336154091889496_2451172917242741439_n.jpg",
+          "title": "singapore tourism Board",
+          "description": "Visit These 7 Chic Bars in Singapore if You’re in the Mood to Live up the Night!"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1657611052_rohan_chum2.jpg",
+          "title": "MG",
+          "description": "Unravel the Secrets of Northeast India With Chum and Rohan in ‘Uncharted Trails’"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1656576649_1653662762_image7.jpg",
+          "title": "saudi tourism authority",
+          "description": "A 7-Day Backpacker’s Itinerary for Exploring Saudi in Under Rs 35,000"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1656925976_1656434103_valley_of_flowers_2.jpeg",
+          "title": "goSTOPS",
+          "description": "Trek the Road Not Taken: 5 Himalayan Treks to Unleash the Adventurer in You This Summer"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1656575755_saudi.jpg",
+          "title": "saudi tourism authority",
+          "description": "Take a Gastronomical Journey Across Saudi to Explore the Undiscovered Flavours of Arabia"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1745358/Image/1655097048_thumbnail_4_0.jpg",
+          "title": "cleartrip",
+          "description": "This Is Why You Will End Up Travelling (& Saving) More This Month!"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1654847823_1654591283_hot_air_gold_coast.jpg",
+          "title": "visit queensland",
+          "description": "With Coral Reefs, Beaches and More, Queensland Is the Next Epic Adventure You’ve Been Waiting For!"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1654253553_post_1_whatsapp_copy.jpg",
+          "title": "Fiji Tourism",
+          "description": "Dreaming of Beaches? Take This Quiz and Win a 4N/5D Holiday to Gorgeous Fiji"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1654777710_manish_tulaskar_rwxwspjg9c8_unsplash.jpg",
+          "title": "visit abu dhabi",
+          "description": "Planning an International Trip in 2022? Enjoy a Relaxed Vacation With This Guide to Abu Dhabi"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1654767020_rezki_trianto_gsxeigxxgyw_unsplash.jpg",
+          "title": "visit saudi",
+          "description": "Which Saudi City Should You Visit? Take This Quiz and Win Amazon Vouchers Worth Rs 2000!"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1654070229_mukteshwar_1.jpg",
+          "title": "goSTOPS",
+          "description": "Put Your Feet up at These Comfy goSTOPS Hostels in the Mountains on Your Road Trip to Uttarakhand"
+        }
+      ],
+      "find_best_places": [
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1656331106_img_0316.jpg",
+          "description": "Explore Tripoto's Destination of The Month: Coorg",
+          "by": "Sakshi Nahar Dhariwal"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1656427359_1648717670_white_brown_minimalist_my_little_family_photo_collage_3.png",
+          "description": "Cheapest Domestic Flights for July & August 2022",
+          "by": "Tanisha Mundra"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1653588715_1467621115_beautiful_mountains_in.jpg",
+          "description": "This July, Set Out to Explore the Unexplored",
+          "by": "Le Voyageur"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1656331240_1563432862_dsc_0245.jpg",
+          "description": "This Place Turns Magical During Monsoons",
+          "by": "Adete Dahiya"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1656331454_1560494791_motorcycle_2937056_1280.jpg",
+          "description": "Things to Remember before Planning a Monsoon Bike Trip",
+          "by": "Adete Dahiya"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1656331633_1633262833_dsc07679.jpg",
+          "description": "Waterfalls in Karnataka to Explore During Monsoon",
+          "by": "Mastane Musafir"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1656331979_1465388810_mussoorie_goa_634.jpg",
+          "description": "Why You Should Visit Goa This Monsoon",
+          "by": "Vinnie Singh"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1656331914_20130217_2013_02_17_2802_bundi_taragarh_fort.jpg",
+          "description": "Monsoon Destinations in India to Add to Your Buckelist",
+          "by": "Sarah"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1656332013_1497096327_bharatpur_palace.jpg",
+          "description": "Places Near Delhi That Are Perfect for Monsoon",
+          "by": "Gunjan Upreti"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1656332191_1502051658_img_5169.jpg",
+          "description": "What to Expect from Jim Corbett in Off-Season (July)",
+          "by": "Shashank Sinha"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1648454814_1638253252_1544522498_1544522495567.jpeg",
+          "description": "10 Amazing Trips For 10 Long Weekends of 2022",
+          "by": "Mastane Musafir"
+        }
+      ],
+      "checkout_best": [
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1656331106_img_0316.jpg",
+          "description": "Explore Tripoto's Destination of The Month: Coorg",
+          "by": "Sakshi Nahar Dhariwal"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1656427359_1648717670_white_brown_minimalist_my_little_family_photo_collage_3.png",
+          "description": "Cheapest Domestic Flights for July & August 2022",
+          "by": "Tanisha Mundra"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1653588715_1467621115_beautiful_mountains_in.jpg",
+          "description": "This July, Set Out to Explore the Unexplored",
+          "by": "Le Voyageur"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1656331240_1563432862_dsc_0245.jpg",
+          "description": "This Place Turns Magical During Monsoons",
+          "by": "Adete Dahiya"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1656331454_1560494791_motorcycle_2937056_1280.jpg",
+          "description": "Things to Remember before Planning a Monsoon Bike Trip",
+          "by": "Adete Dahiya"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1656332895_1655125606_1655123371_1654797038_cq5dam_web_756_756.jpeg",
+          "description": "Waterfalls in Karnataka to Explore During Monsoon",
+          "by": "Mastane Musafir"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1656332866_1633518714_267103469.jpg",
+          "description": "Why You Should Visit Goa This Monsoon",
+          "by": "Vinnie Singh"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1656333075_1655949685_1628847164_1627983039_696b9be9_d0ff_4240_a0fa_2e8e89f15daa.jpg",
+          "description": "Monsoon Destinations in India to Add to Your Buckelist",
+          "by": "Sarah"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1656331106_img_0316.jpg",
+          "description": "Places Near Delhi That Are Perfect for Monsoon",
+          "by": "Gunjan Upreti"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1656427359_1648717670_white_brown_minimalist_my_little_family_photo_collage_3.png",
+          "description": "What to Expect from Jim Corbett in Off-Season (July)",
+          "by": "Shashank Sinha"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1656331240_1563432862_dsc_0245.jpg",
+          "description": "10 Amazing Trips For 10 Long Weekends of 2022",
+          "by": "Mastane Musafir"
+        }
+      ],
+      "travel_learn": [
+        {
+          "description": "Unwind at Luxury Camps in a Forest as You Learn Birdwatching & Bushcraft | Moksham Campsite",
+          "place": "Nainital",
+          "duration": "3D · 2N",
+          "price": "₹ 7,199",
+          "image": "https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg"
+        },
+        {
+          "description": "Explore One of Asia's Spookiest Spots While Unwinding Amidst Nature | Seegreen Lodges, Mussoorie",
+          "place": "Mussoorie",
+          "duration": "3D · 2N",
+          "price": "₹ 7,500",
+          "image": "https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg"
+        },
+        {
+          "description": "Hike to a Mountaintop & Swim in a Waterfall as You Experience Mukteshwar’s Magical Monsoon | Hisalu",
+          "place": "Mukteshwar",
+          "duration": "3D · 2N",
+          "price": "₹ 7,150",
+          "image": "https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg"
+        },
+        {
+          "description": "Take a Dip in a River and Ride on a Toy Train Amidst Mountains | Omya Forest Camps, Bir",
+          "place": "Bir",
+          "duration": "3D · 2N",
+          "price": "₹ 8,599",
+          "image": "https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg"
+        },
+        {
+          "description": "Stargaze & Pluck Your Own Herbs For Tea at This Kumaoni Retreat | Once Upon a Forest, Hariyal",
+          "place": "Nainital",
+          "duration": "3D · 2N",
+          "price": "₹ 5,199",
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1653394847_nw_c2.jpg"
+        },
+        {
+          "description": "Learn Yoga While Unwinding Amidst Nature & Hike to a Gorgeous Waterfall | Nature Care Village",
+          "place": "Rishikesh",
+          "duration": "3D · 2N",
+          "price": "₹ 4,799",
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2163002/Image/1640323403_image_cover_b.jpg"
+        },
+        {
+          "description": "Trek to Triund and Stay At The Residence Of Kangra’s Maharaja | Clouds End Villa, Dharamshala",
+          "place": "Dharamshala",
+          "duration": "4D · 3N",
+          "price": "₹ 13,750",
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1654504108_ce_c1.jpg"
+        },
+        {
+          "description": "Explore an Artist’s Estate & Stay in a Kathkuni Home Hidden in Manali's Forests | NORTH",
+          "place": "Manali",
+          "duration": "3D · 2N",
+          "price": "₹ 9,850",
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1653391344_ln_c1.jpg"
+        },
+        {
+          "description": "Embark on an Adventure with Night Safari & Cycle Safari as You Spot Tigers | Mandaal Corbett",
+          "place": "Ramnagar",
+          "duration": "3D · 2N",
+          "price": "₹ 10,000",
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1645595596_image_cover_b_2.jpg"
+        },
+        {
+          "description": "Learn to Cook a Traditional Rajasthani Meal at a 200 Year-Old Luxury Haveli",
+          "place": "Rajasthan",
+          "duration": "2D · 1N",
+          "price": "₹ 3,799",
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2163002/Image/1638778652_image_cover_b.jpg"
+        }
+      ],
+      "attend_online": [
+        {
+          "description": "How to become a successfull digital Nomad | Monika Guwalani",
+          "price": 1000,
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2163002/Image/1656394504_copy_of_workshop_covers_16.png"
+        },
+        {
+          "description": "How to travel longer without putting a dent in your pocket | Astha Devanshi",
+          "price": 1000,
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2163002/Image/1656913430_copy_of_workshop_covers_19.png"
+        },
+        {
+          "description": "How to travel in exchange for work | Raghu Raahi",
+          "price": 1000,
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2163002/Image/1656652248_copy_of_workshop_covers_18.png"
+        },
+        {
+          "description": "How to take your vlogging to the next level | Shahswat Joshi",
+          "price": 1000,
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2163002/Image/1656573237_copy_of_workshop_covers_17.png"
+        },
+        {
+          "description": "How to be a smart Solo Traveler and manage your expenses like a pro | Rashi Choudhary",
+          "price": 1000,
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2163002/Image/1656062118_copy_of_workshop_covers_15.png"
+        }
+      ],
+      "book_budget": [
+        {
+          "description": "North East India Tour packages",
+          "place": "North East",
+          "duration": "3D · 2N",
+          "price": 29000,
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1524784/Image/1567683210_north_east_web.jpg"
+        },
+        {
+          "description": "Kashmir Packages",
+          "place": "Kashmir",
+          "duration": "3D · 2N",
+          "price": 16000,
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1524784/Image/1567063251_kashmir_app.jpg"
+        },
+        {
+          "description": "Dubai Packages",
+          "place": "Dubai",
+          "duration": "3D · 2N",
+          "price": 28000,
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1524784/Image/1567083461_dubai_app.jpg"
+        },
+        {
+          "description": "Andaman Packages",
+          "place": "Andaman",
+          "duration": "3D · 2N",
+          "price": 18000,
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1524784/Image/1567494998_andaman_app.jpg"
+        },
+        {
+          "description": "Maldives Holiday Packages",
+          "place": "Maldives",
+          "duration": "3D · 2N",
+          "price": 70000,
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/454712/Image/1578895208_web_maldives.jpg"
+        }
+      ],
+      "tripoto_creaters": [
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1657797228_9.jpg"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1657797266_8.jpg"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1657797979_10_1.jpg"
+        }
+      ],
+      "plan_your_next": [
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1756031/Image/1599216481_rajasthan.jpg"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1756031/Image/1599216560_kerala.jpg"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1756031/Image/1599216649_andaman.jpg"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1613732339_1_10.jpg"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1613732387_3_7.jpg"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1613732417_2_10.jpg"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1613732456_dubai.jpg"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1613732480_4_4.jpgs"
+        }
+      ],
+      "watch_tripotos": [
+        {
+          "image": "https://image.mux.com/65Mxwlku9ue7VTvDW8F72z1U5VIOiEaz/thumbnail.jpg?width=600&height=600&time=2.0",
+          "description": "Best Weekend Getaways From Mumbai Under 250 Kms",
+          "by": "Karishma Shaikh"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/gen/1789711/Image/1634027797_thumbnail.jpg",
+          "description": "Narendra Bhawan:Palace Hotel In Bikaner",
+          "by": "Tanisha Mundra"
+        },
+        {
+          "image": "https://image.mux.com/iFVXAVPcgtz02Zcmt2ExiBVFZbYw7iMhN/thumbnail.jpg?width=600&height=600&time=3.01",
+          "description": "5-Day Jaipur Itinerary To See The City Of Maharajas",
+          "by": "Naina Rao"
+        },
+        {
+          "image": "https://image.mux.com/VZNhkabs2mLwRfjO6j600Q7OmfLxm5VmV/thumbnail.jpg?width=600&height=600&time=2.0",
+          "description": "5 Beautiful Places In Delhi That Are Seriously Underrated",
+          "by": "Aditi shukla"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/gen/1789711/Image/1634027829_thumbnail.jpg",
+          "description": "10 budget hotels in India",
+          "by": "Sarah"
+        }
+      ]
+    },
+    "dubai": {
+      "trending": [
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1640859705_dgt_abshar_500x500.jpg",
+          "description": "The Ultimate Dubai Gourmet Trail",
+          "by": "Sarah Walton"
+        },
+        {
+          "image": "https://static2.tripoto.com/media/filter/tst/img/1286946/TripDocument/1551089493_img_4663.jpg",
+          "description": "6 Must try Restaurants , Bar & Kitchen in Dubai for your next visit",
+          "by": "Vandana Goenka"
+        },
+        {
+          "image": "https://static2.tripoto.com/media/filter/tst/img/270428/TripDocument/1488799456_11171089415_139eaec90f_o_1.jpg",
+          "description": "Middle Eastern Culinary Experiences in Dubai",
+          "by": "Aditi Jana"
+        },
+        {
+          "image": "https://static2.tripoto.com/media/filter/tst/img/1269913/TripDocument/1556433721_4862a8acdd301602f0cb0183682bf096.jpg",
+          "description": "The Arabian delights from the land of Emirati, UAE.",
+          "by": "Shilpa Srinivas"
+        },
+        {
+          "image": "https://static2.tripoto.com/media/filter/tst/img/1269913/TripDocument/1556433721_4862a8acdd301602f0cb0183682bf096.jpg",
+          "description": "Dubai Kitchens with Michelin-Star Chef Vineet Bhatia | Visit Dubai",
+          "by": ""
+        }
+      ],
+      "things_to_do": [
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1745358/Image/1639729293_1528362188_27348983382_6d0f3145ca_o.jpg",
+          "description": "48 hours in Dubai",
+          "by": "Heusen"
+        },
+        {
+          "image": "https://static2.tripoto.com/media/filter/tst/img/308363/TripDocument/1505453826_dubai1.jpg",
+          "description": "The World's Largest Indoor Theme Park And 10 More Reasons To Explore Dubai Attractions",
+          "by": "Aakanksha Magan"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1640859651_screenshot_2021_12_30_at_3_48_57_pm.jpg",
+          "description": "The Top Dubai Attractions: Explore The City Of Humble Beginnings And Exotic Experiences",
+          "by": "Aakanksha Magan"
+        },
+        {
+          "image": "https://static2.tripoto.com/media/filter/tst/img/1789711/TripDocument/1638860409_photo_1459600661907_3c72c54955de.jpeg",
+          "description": "Now, Visa-On-Arival In Dubai For Indians! Here's Everything You Need To Know About The Gulf Paradise",
+          "by": "Tripoto"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1640859438_1611509227_moon_ku4rg5r43cq_unsplash.jpeg",
+          "description": "Top things to do in Dubai",
+          "by": "Jalpa Rathod Chauhan"
+        }
+      ],
+      "chasing_adventure": [
+        {
+          "image": "https://static2.tripoto.com/media/filter/tst/img/350284/TripDocument/1573831989_1573831980735.jpg",
+          "description": "Dubai on your mind? Add these adventures to your checklist.",
+          "by": "Fahim"
+        },
+        {
+          "image": "https://static2.tripoto.com/media/filter/tst/img/1728/TripDocument/1496994522_16177527_1117331771709189_6483495623945412900_o.jpg",
+          "description": "Skydiving In Dubai: Here's Everything You Need To Know",
+          "by": "Gunjan Upreti"
+        },
+        {
+          "image": "https://static2.tripoto.com/media/filter/tst/img/270428/TripDocument/1506848442_19436287374_feac1237cb_o.jpg",
+          "description": "Get your Adrenaline Rush on in Dubai",
+          "by": "Aditi Jana"
+        },
+        {
+          "image": "https://static2.tripoto.com/media/filter/tst/img/66808/TripDocument/1479354622_a.png",
+          "description": "Meet The SHARKS At The Dubai Aquarium & Underwater Zoo | Awara Diaries",
+          "by": "Parampara Patil Hashmi"
+        },
+        {
+          "image": "https://static2.tripoto.com/media/filter/tst/img/308363/TripDocument/1517553561_desertsafaridubai1.jpg",
+          "description": "Here's Why You Should Opt For A Desert Safari and Dune Bashing In Dubai For An Adventure",
+          "by": "Aakanksha Magan"
+        },
+        {
+          "image": "https://static2.tripoto.com/media/filter/tst/img/111086/TripDocument/1437674241_dubai_desert_safari_triptodesert_com.jpg",
+          "description": "Dubai Desert Safari- A Sand Escapade",
+          "by": "Siddharth Juneja"
+        },
+        {
+          "image": "https://static2.tripoto.com/media/filter/tst/img/2076866/TripDocument/1614929221_banner_compressed_1_1200x600.jpg",
+          "description": "Top 10 Interesting Adventure Sports In Dubai",
+          "by": "Henry Wilson"
+        }
+      ],
+      "book_a_dubai": [
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1657693753_dubai.jpg",
+          "description": "Discover Dubai with Theme Parks",
+          "duration": "5D · 4N",
+          "price": 28600,
+          "logo": "https://cdn1.tripoto.com/media/filter/mss/img/1972916/UserPhoto/1657011639_logo.png",
+          "logo_text": "Yuven Travel"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1634889093_3_1.jpg",
+          "description": "3N Maldives - Bandos",
+          "duration": "6D · 5N",
+          "price": 52650,
+          "logo": "https://cdn1.tripoto.com/media/filter/mss/img/1972916/UserPhoto/1657011639_logo.png",
+          "logo_text": "Yuven Travel"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1635501546_3_1.jpg",
+          "description": "DUBAI EXPERIENCE",
+          "duration": "5D · 4N",
+          "price": 43500,
+          "logo": "https://cdn1.tripoto.com/media/filter/mss/img/2008610/UserPhoto/1610694091_whatsapp_image_2020_12_13_at_12_50_48_am.jpeg",
+          "logo_text": "HOUSE OF TRAVELLERS"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1643003981_6.jpg",
+          "description": "Amazing Dubai",
+          "duration": "5D · 4N",
+          "price": 38000,
+          "logo": "https://cdn1.tripoto.com/media/filter/mss/img/2008610/UserPhoto/1610694091_whatsapp_image_2020_12_13_at_12_50_48_am.jpeg",
+          "logo_text": "HOUSE OF TRAVELLERS"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1649151039_dubai.jpg",
+          "description": "Explendid Dubai",
+          "duration": "4D · 3N",
+          "price": 40000,
+          "logo": "https://cdn1.tripoto.com/media/filter/mss/img/1972916/UserPhoto/1657011639_logo.png",
+          "logo_text": "HOLIDAY ACES"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1649399337_dubai_1.jpg",
+          "description": "Dubai - Gold Package",
+          "duration": "5D · 4N",
+          "price": 33000,
+          "logo": "",
+          "logo_text": "TripCarnival"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1649399491_dubai_2.jpg",
+          "description": "Dubai - Platinum Package",
+          "duration": "5D · 4N",
+          "price": 40000,
+          "logo": "",
+          "logo_text": "TripCarnival"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1634889093_3_1.jpg",
+          "description": "Dubai - Ruby Package",
+          "duration": "6D · 5N",
+          "price": 42000,
+          "logo": "",
+          "logo_text": "TripCarnival"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1646629955_3_1.jpg",
+          "description": "DISCOVER DUBAI 4N/5D",
+          "duration": "5D · 4N",
+          "price": 27500,
+          "logo": "",
+          "logo_text": "TRAVSTUDIO"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1635501546_3_1.jpg",
+          "description": "DUBAI SUMMER HOLIDAY",
+          "duration": "5D · 4N",
+          "price": 57999,
+          "logo": "",
+          "logo_text": "TravelZiel"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1635501546_3_1.jpg",
+          "description": "Fascinating Dubai Holiday",
+          "duration": "6D · 5N",
+          "price": 58990,
+          "logo": "",
+          "logo_text": "Utazzo.com"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1646629955_3_1.jpg",
+          "description": "DUBAI SUMMER HOLIDAY",
+          "duration": "5D · 4N",
+          "price": 59000,
+          "logo": "",
+          "logo_text": "TravelZiel"
+        }
+      ],
+      "culinary_exp": [
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1640686640_1640627907_181117_kite_beach_paddle_board_group_7.jpeg",
+          "description": "10 Instagram-Worthy Locations in Dubai, Millennials Need to Visit at Least Once",
+          "by": "Sushantika"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1640687049_download2_1.jpeg",
+          "description": "Travelling to Dubai Soon? These Brand New Attractions Must be on Your Itinerary!",
+          "by": "Wander Joy"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1640776714_screenshot_2021_12_29_at_4_47_50_pm.jpg",
+          "description": "Planning to Attend Expo 2020 Dubai? You Can’t Miss These Top 50 Experiences!",
+          "by": "Ila Reddy"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1640686822_1640615670_screenshot_2021_12_27_at_8_04_20_pm.jpg",
+          "description": "You Can’t Call Yourself an Adrenaline Junkie if You Haven’t Tried These Adventures in Dubai!",
+          "by": "Niyati Saxena"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1640687209_1640625034_dinner_in_the_sky.jpeg",
+          "description": "9 Unique Dining Experiences to Check Off From Your Bucket List on Your Next Dubai Trip",
+          "by": "Sushantika"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1640776960_1640670342_al_wasl_plaza.jpeg",
+          "description": "अत्याधुनिक दुबई में क्या कुछ है नया? यात्रा के पहले जानिए उन सभी अनुभवों के बारे में जिनका आनंद ले स",
+          "by": "Deeksha Agrawal"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1640687368_1640666000_image3.jpeg",
+          "description": "पहली विदेश यात्रा के लिए दुबई की तैयारी? जानिए कैसे प्लान करें ये ट्रिप, क्या देखें और कहाँ घूमें",
+          "by": "Musafir Rishabh"
+        }
+      ]
+    },
+    "singapore": {
+      "corousal": [
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/nxxl/img/1745358/Image/1645179779_sm_post_for_ris_contest_promotion_1a.jpg"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/nxxl/img/1745358/Image/1645179960_sm_post_for_ris_contest_promotion_6.jpg"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/nxxl/img/1745358/Image/1645179816_sm_post_for_ris_contest_promotion_2.jpg"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/nxxl/img/1745358/Image/1645179860_sm_post_for_ris_contest_promotion_3.jpg"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/nxxl/img/1745358/Image/1645179888_sm_post_for_ris_contest_promotion_4.jpg"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/nxxl/img/1745358/Image/1645179925_sm_post_for_ris_contest_promotion_5.jpg"
+        }
+      ],
+      "chhota_bheem": [
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1745358/Image/1643354405_container_5_1.jpg",
+          "description": "A sneak-peek: Chhota Bheem in Singapore"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1745358/Image/1643354418_container_5_2.jpg",
+          "description": "Episode 1 - The Journey Begins"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1745358/Image/1643354434_container_5_3.jpg",
+          "description": "Episode 2 - Fun In The Garden City"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1745358/Image/1643354446_container_5_4.jpg",
+          "description": "Episode 3 - Happy Times For Foodies"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1745358/Image/1643354455_container_5_5.jpg",
+          "description": "Episode 4 - Chase The Action"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1745358/Image/1643354465_container_5_6.jpg",
+          "description": "Episode 5 - Wonders Of Flora & Fauna"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1745358/Image/1643354476_container_5_7.jpg",
+          "description": "Episode 6 - Surprise Birthday For Bheem"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1745358/Image/1643354485_container_5_8.jpg",
+          "description": "Episode 7 - Immersing In Art & Cultures"
+        }
+      ],
+      "image_grid": [
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1745358/Image/1645178326_1.jpg"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1745358/Image/1645178357_2.jpg"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1745358/Image/1645178374_3.jpg"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1745358/Image/1645178396_4.jpg"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1745358/Image/1645178422_5.jpg"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1745358/Image/1645178447_6.jpg"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1745358/Image/1645178473_7.jpg"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1745358/Image/1643281749_card_8.jpg"
+        },
+        {
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/1745358/Image/1643281767_card_9.jpg"
+        }
+      ]
     }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
   }
 }
