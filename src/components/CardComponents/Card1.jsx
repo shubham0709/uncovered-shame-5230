@@ -1,45 +1,43 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Box, Image, Text } from "@chakra-ui/react";
 
 export const Card1 = ({ elem }) => {
-  console.log(elem, " card from  card1 ");
-  const [item, setItem] = useState({});
-
   return (
     <Box
       adding={"12px"}
       fontFamily="circularairpro-bold, Helvetica, -apple-system,Arial, sans-serif"
-      lineHeight="25.7143px"
       verticalAlign="baseline"
-      letterSpacing="normal"
       wordSpacing="0px"
+      lineHeight="35.7143px"
+      letterSpacing="1"
       Font
       being
+      backgroundColor="RGBA(0, 0, 0, 0)"
       Rendered="circularairpro-bold 100.0%"
       textAlign={"left"}
-      fontWeight={"600"}
-      h="320px"
+      h="420px"
+      w="330px"
     >
-      <Box h="56%">
+      <Box h="54%">
         {" "}
         <Image w="100%" h="50%" src={elem?.image || ""} borderRadius={"5px"} />
       </Box>
 
-      <Box h="44%">
-        <Text fontSize="15" color={"rgb(255,115,69)"} margin="5px 0">
+      <Box h="46%">
+        <Text fontSize="18" color={"rgb(255,115,69)"} margin="5px 0"
+        fontWeight="550">
           {elem?.title}
         </Text>
         <Text
-          fontSize="19"
-          fontWeight="530"
-          lineHeight="25.7143px"
+          fontSize="23"
+          fontWeight="600"
           textTransform="capitalize"
           Rendered="circularairpro-bold"
+          color={"gray.800"}
         >
           {elem?.description || ""}
         </Text>
       </Box>
-      {/* <Text fontSize='6xl'>{cardData.category}</Text>     */}
     </Box>
   );
 };

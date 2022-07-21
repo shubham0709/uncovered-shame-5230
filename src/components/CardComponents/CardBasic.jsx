@@ -7,40 +7,45 @@ export const CardBasic = ({ elem }) => {
     <Box
       adding={"12px"}
       fontFamily="circularairpro-bold, Helvetica, -apple-system,Arial, sans-serif"
-      lineHeight="25.7143px"
+      lineHeight="35.7143px"
       verticalAlign="baseline"
       letterSpacing="normal"
-      wordSpacing="0px"
+      wordSpacing="1"
       Font
       being
       Rendered="circularairpro-bold 100.0%"
       textAlign={"left"}
-      fontWeight={"600"}
-      h="320px"
+      h="420px"
+      w="330px"
     >
       {/* <Text>Travel and Learn with Tripoto's Mindful Retreats</Text> */}
-      <Box h="56%">
+      <Box h="54%">
         {" "}
         <Image w="100%" h="50%" src={elem?.image || ""} borderRadius={"5px"} />
       </Box>
-      <Box h="44%">
-        <Text color="orange.500" fontSize={"15px"}>
+      <Box h="46%">
+        <Text color="orange.500" 
+        fontWeight="550"
+        fontSize={"18px"}  margin={"5px 0"}
+        >
           {elem?.title || "LUXURY"}
         </Text>
         <HStack>
           <Text
             variant="solid"
-            margin={"2px 0"}
+            margin={"5px 0"}
             textAlign="left"
-            fontSize={"20px"}
+            fontSize={"23px"}
             padding="0px"
+            fontWeight="600"
+            color={"gray.800"}
           >
             {elem?.description || ""}
           </Text>
         </HStack>
-        <Flex fontSize={"15px"}>
-          <Text margin={"0 10px 0 0"}>By</Text>
-          <Text color="blue">{elem?.by || ""} </Text>
+        <Flex fontSize={"18px"} >
+          <Text margin={"0 10px 0 0"} >By</Text>
+          <Text color="rgb(85,173,225)">{elem?.by || ""} </Text>
         </Flex>
       </Box>
     </Box>

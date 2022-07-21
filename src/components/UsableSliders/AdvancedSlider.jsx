@@ -45,8 +45,5 @@ export default function AdvancedSlider({ arr, limit }) {
 }
 
 const SliderWrapper = Styled.div`
-  /* width:75%; */
-  /* margin:auto; */
-  /* height:600px;
-  border: 1px solid green; */
+
 `;

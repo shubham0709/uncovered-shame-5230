@@ -40,28 +40,10 @@ export default function MediumSlider({ arr }) {
               <Card1 elem={elem} />
             </SwiperSlide>
           ))}
-        {/* <SwiperSlide>
-          <CardBasic />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CardBasic />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CardBasic />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CardBasic />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CardBasic />
-        </SwiperSlide> */}
       </Swiper>
     </SliderWrapper>
   );
 }
 
 const SliderWrapper = Styled.div`
-  /* width:75%;
-  margin:auto; */
-  /* border: 1px solid green; */
 `;
