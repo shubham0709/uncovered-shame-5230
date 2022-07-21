@@ -2,7 +2,6 @@ import React from "react";
 import { Box, Image, Text } from "@chakra-ui/react";
 
 export const Card1 = ({ elem }) => {
-
   return (
     <Box
       adding={"12px"}
@@ -25,8 +24,12 @@ export const Card1 = ({ elem }) => {
       </Box>
 
       <Box h="46%">
-        <Text fontSize="18" color={"rgb(255,115,69)"} margin="5px 0"
-        fontWeight="550">
+        <Text
+          fontSize="18"
+          color={"rgb(255,115,69)"}
+          margin="5px 0"
+          fontWeight="550"
+        >
           {elem?.title}
         </Text>
         <Text
