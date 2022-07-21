@@ -47,7 +47,7 @@ export const LandingPage = () => {
           </div>
         </div>
       </div>
-      ;{/* Middle Part... */}
+      {/* Middle Part... */}
       <Box w="85%" margin={" 0 auto"}>
         <Box margin="30px 0">
           <Flex justifyContent={"space-between"}>
