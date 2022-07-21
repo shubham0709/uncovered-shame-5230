@@ -12,28 +12,55 @@ import {
     Text,Box
   } from '@chakra-ui/react';
   import React from "react"
+
+  const initState = {
+
+  }
+  const Reducer = (state=initState,{type,payload}) => {
+    switch(type){
+        default : {
+            return state
+        }
+    }
+  }
   
   export default function CustoemrDetailForm() {
     const[ countOfPeople,setCountOfPeople] = React.useState(1)
     const [amount,setAmount] = React.useState(0)
+    const [state,dispatch] = React.useReducer(Reducer,initState)
     return (
+       <>
+     <Box height="69px" width="100%" backgroundColor="#2f9bdb"></Box>
       <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
+       
         <Flex p={8} flex={1} align={'center'} justify={'center'}>
           <Stack spacing={4} w={'full'} maxW={'md'}>
             <Heading fontSize={'2xl'}>Enter Your Details and Proceed To Book</Heading>
             
             
             <FormControl id="email">
-              <Input type="email" />
+              <Input 
+                onChange={(e)=>dispatch({type:"email",payload:e.target.value})}              
+                value={state.value}
+                type="email" placeholder="Email" />
             </FormControl>
             <FormControl id="fullName">
-              <Input type="text" />
+              <Input 
+                onChange={(e)=>dispatch({type:"fullname",payload:e.target.value})}              
+                value={state.value}
+                type="text" placeholder="Full Name" />
             </FormControl>
-            <FormControl id="contactNumberl">
-              <Input type="tel" />
+            <FormControl id="contactNumber">
+              <Input 
+                onChange={(e)=>dispatch({type:"contactnumber",payload:e.target.value})}             
+                 value={state.value}
+                type="tel" placeholder='Contact Number' />
             </FormControl>
-            <FormControl id="departureCity">
-              <Input type="text" />
+            <FormControl id="departureCity" >
+              <Input 
+                onChange={(e)=>dispatch({type:"diparturecity",payload:e.target.value})}              
+                value={state.value}
+                type="text" placeholder="Departure City"/>
             </FormControl>
             <FormControl  id="numberOfPeople">
               <Flex justifyContent="space-between">
@@ -48,17 +75,24 @@ import {
               </Flex>
             </FormControl>
             <FormControl id="Calender">
-              <Input type="date" />
+              <Input 
+                onChange={(e)=>dispatch({type:"date",payload:e.target.value})}              
+                value={state.value}
+                type="date" />
             </FormControl>
             
             <FormControl id="bedRoomOccupancy">
                 <Text>Type Of room</Text>
-              <Input type="radio" />
+              <Input 
+                value={state.value}
+                type="radio" />
             </FormControl>
 
             <FormControl id="bedRoomOccupancy">
                
-              <Input type="checkBox" /><Text>Send me updates for this booking on WhatsApp</Text>
+              <Input 
+                value={state.value}
+                type="checkBox" /><Text>Send me updates for this booking on WhatsApp</Text>
               <Text>Type Of room</Text>
             </FormControl>
 
@@ -96,5 +130,7 @@ import {
           />
         </Flex>
       </Stack>
+     
+       </>
     );
   }
