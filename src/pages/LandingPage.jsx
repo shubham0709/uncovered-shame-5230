@@ -19,7 +19,7 @@ export const LandingPage = () => {
   }, []);
 
   useEffect(() => {
-    console.log(DataReducer.data.landing);
+    // console.log(DataReducer.data.landing);
   }, [DataReducer.data.length]);
 
   return (

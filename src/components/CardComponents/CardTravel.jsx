@@ -11,7 +11,6 @@ import {
 } from "@chakra-ui/react";
 
 export const CardTravel = ({ elem }) => {
-  console.log("elem from card travel : ", elem);
   return (
     <Box
       adding={"12px"}
