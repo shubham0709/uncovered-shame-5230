@@ -48,60 +48,60 @@ export default function LargeWithLogoLeft() {
               India's Largest Travel Community
             </Text>
             <Flex gap="10px" marginTop="20px">
-            <i style={{fontSize:"35px"}} className="fa-brands fa-facebook-square"></i>
-            <i style={{fontSize:"35px"}} className="fa-brands fa-twitter-square"></i>
-            <i style={{fontSize:"35px"}} className="fa-brands fa-instagram"></i>
-            <i style={{fontSize:"35px"}} className="fa-brands fa-youtube"></i>
-            <i style={{fontSize:"35px"}} className="fa-brands fa-pinterest-square"></i>
+            <i style={{fontSize:"35px",cursor:"pointer"}} className="fa-brands fa-facebook-square"></i>
+            <i style={{fontSize:"35px",cursor:"pointer"}} className="fa-brands fa-twitter-square"></i>
+            <i style={{fontSize:"35px",cursor:"pointer"}} className="fa-brands fa-instagram"></i>
+            <i style={{fontSize:"35px",cursor:"pointer"}} className="fa-brands fa-youtube"></i>
+            <i style={{fontSize:"35px",cursor:"pointer"}} className="fa-brands fa-pinterest-square"></i>
 
 
             </Flex>
             <Box>
             <img 
                src="https://cdn1.tripoto.com/assets/2.9/img/logo/download-android-app.svg" alt="google store" 
-               style={{margin:"10px"}}   
+               style={{margin:"10px",cursor:"pointer"}}   
             />
             </Box>
           </Stack>
           <Stack align={'flex-start'} >
             <ListHeader>About Tripoto</ListHeader>
-            <Link fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>How it works</Link>
-            <Link fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>FAQ's</Link>
-            <Link fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Privacy Policy</Link>
-            <Link fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Terms & Conditions</Link>
-            <Link fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Careers</Link>
-            <Link fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Contact Us</Link>
+            <Link style={{textDecoration:"none"}} fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>How it works</Link>
+            <Link style={{textDecoration:"none"}} fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>FAQ's</Link>
+            <Link style={{textDecoration:"none"}} fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Privacy Policy</Link>
+            <Link style={{textDecoration:"none"}} fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Terms & Conditions</Link>
+            <Link style={{textDecoration:"none"}} fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Careers</Link>
+            <Link style={{textDecoration:"none"}} fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Contact Us</Link>
           </Stack>
           <Stack align={'flex-start'} >
             <ListHeader>Products</ListHeader>
-            <Link fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Tour Packages</Link>
-            <Link fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Travel Guides</Link>
-            <Link fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Trips & Itineraries</Link>
-            <Link fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Weekend Getaways</Link>
-            <Link fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Places to Visit</Link>
-            <Link fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Other Travel Categories</Link>
-            <Link fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Tripoto Forum</Link>
-            <Link fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Honeymoon Packages</Link>
+            <Link style={{textDecoration:"none"}} fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Tour Packages</Link>
+            <Link style={{textDecoration:"none"}} fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Travel Guides</Link>
+            <Link style={{textDecoration:"none"}} fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Trips & Itineraries</Link>
+            <Link style={{textDecoration:"none"}} fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Weekend Getaways</Link>
+            <Link style={{textDecoration:"none"}} fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Places to Visit</Link>
+            <Link style={{textDecoration:"none"}} fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Other Travel Categories</Link>
+            <Link style={{textDecoration:"none"}} fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Tripoto Forum</Link>
+            <Link style={{textDecoration:"none"}} fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Honeymoon Packages</Link>
           </Stack>
           <Stack align={'flex-start'} >
             <ListHeader>Important Travel Links</ListHeader>
-            <Link fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Goa Tourism</Link>
-            <Link fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Dubai Tourism</Link>
-            <Link fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Singapore Tourism</Link>
-            <Link fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Kerala Tourism</Link>
-            <Link fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Manali Tourism</Link>
-            <Link fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Bali Tourism</Link>
-            <Link fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Sri Lanka Tourism</Link>
-            <Link fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Honeymoon Destinations In India</Link>
+            <Link style={{textDecoration:"none"}} fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Goa Tourism</Link>
+            <Link style={{textDecoration:"none"}} fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Dubai Tourism</Link>
+            <Link style={{textDecoration:"none"}} fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Singapore Tourism</Link>
+            <Link style={{textDecoration:"none"}} fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Kerala Tourism</Link>
+            <Link style={{textDecoration:"none"}} fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Manali Tourism</Link>
+            <Link style={{textDecoration:"none"}} fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Bali Tourism</Link>
+            <Link style={{textDecoration:"none"}} fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Sri Lanka Tourism</Link>
+            <Link style={{textDecoration:"none"}} fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Honeymoon Destinations In India</Link>
           </Stack>
           <Stack align={'flex-start'} >
             <ListHeader>Partner Programs</ListHeader>
-            <Link fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Buy Travel Leads</Link>
-            <Link fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Partner With Us</Link>
-            <Link fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Earn Credits</Link>
-            <Link fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Get Paid To Travel</Link>
-            <Link fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Import Blog To Itinerary</Link>
-            <Link fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Tripoto Ai</Link>
+            <Link style={{textDecoration:"none"}} fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Buy Travel Leads</Link>
+            <Link style={{textDecoration:"none"}} fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Partner With Us</Link>
+            <Link style={{textDecoration:"none"}} fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Earn Credits</Link>
+            <Link style={{textDecoration:"none"}} fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Get Paid To Travel</Link>
+            <Link style={{textDecoration:"none"}} fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Import Blog To Itinerary</Link>
+            <Link style={{textDecoration:"none"}} fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Tripoto Ai</Link>
           </Stack>
         </SimpleGrid>
         <Box  paddingBottom="90px" fontWeight="semiBold" fontSize="md">
