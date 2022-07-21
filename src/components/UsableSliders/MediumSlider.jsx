@@ -14,8 +14,10 @@ import "./styles.css";
 import { Pagination, Navigation } from "swiper";
 import { Image } from "@chakra-ui/react";
 import { CardBasic } from "../CardComponents/CardBasic";
+import { Card1 } from "../CardComponents/Card1";
 
-export default function MediumSlider() {
+export default function MediumSlider({ arr }) {
+  console.log("from medium slider : ", arr);
   return (
     <SliderWrapper>
       <Swiper
@@ -32,7 +34,13 @@ export default function MediumSlider() {
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>
+        {arr?.length > 0 &&
+          arr.map((elem, i) => (
+            <SwiperSlide key={i}>
+              <Card1 elem={elem} />
+            </SwiperSlide>
+          ))}
+        {/* <SwiperSlide>
           <CardBasic />
         </SwiperSlide>
         <SwiperSlide>
@@ -46,7 +54,7 @@ export default function MediumSlider() {
         </SwiperSlide>
         <SwiperSlide>
           <CardBasic />
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
     </SliderWrapper>
   );

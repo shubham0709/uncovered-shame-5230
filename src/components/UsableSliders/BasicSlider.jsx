@@ -14,8 +14,10 @@ import "./styles.css";
 import { Pagination, Navigation } from "swiper";
 import { Image } from "@chakra-ui/react";
 import { Card1 } from "../CardComponents/Card1";
+import { CardBasic } from "../CardComponents/CardBasic";
 
-export default function BasicSlider() {
+export default function BasicSlider({ arr }) {
+  console.log(arr, " array from basic slider");
   return (
     <SliderWrapper>
       <Swiper
@@ -32,18 +34,12 @@ export default function BasicSlider() {
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <Card1 />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Card1 />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Card1 />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Card1 />
-        </SwiperSlide>
+        {arr?.length > 0 &&
+          arr.map((elem, i) => (
+            <SwiperSlide key={i}>
+              <CardBasic elem={elem} />
+            </SwiperSlide>
+          ))}
       </Swiper>
     </SliderWrapper>
   );

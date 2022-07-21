@@ -10,7 +10,8 @@ import {
   Divider,
 } from "@chakra-ui/react";
 
-export const CardTravel = () => {
+export const CardTravel = ({ elem }) => {
+  console.log("elem from card travel : ", elem);
   return (
     <Box
       boder="1px solid red"
@@ -31,18 +32,14 @@ export const CardTravel = () => {
       {/* 111111111111------------ */}
       <Box h="45%">
         {" "}
-        <Image
-          src="https://www.bibliophilebookstore.com/wp-content/uploads/2022/01/WhatsApp-Image-2022-01-28-at-1.19.42-PM.jpeg"
-          alt="cardImage"
-          borderRadius={"5px"}
-        />
+        <Image src={elem?.image} alt="cardImage" borderRadius={"5px"} />
       </Box>
       {/* 2222222---------- */}
 
       <Box h="65%">
         <Box>
           <Text size={"mg"} variant="solid" color="teal" margin="5px 0">
-            Packages
+            Package
           </Text>
         </Box>
         {/* 3333333333*/}
@@ -53,7 +50,7 @@ export const CardTravel = () => {
             fontSize={"20px"}
             padding="0px"
           >
-            North East Indian Tour Packagessk ajh sdgkjha lkdj
+            {elem?.description || ""}
           </Text>
         </Box>
         {/* 444444444444444*/}
@@ -68,13 +65,11 @@ export const CardTravel = () => {
           >
             {" "}
             <Flex margin={"0"}>
-            <Box h="20px"
-                w="15px">
-              <Image
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTQ_CDpHaWoxmGTSpLbBy_GElYmSHCzCAYvQ&usqp=CAU"
-              ></Image>
-            </Box>
-            <Text color="teal">NorthenEast Inbdian</Text></Flex>
+              <Box h="20px" w="15px">
+                <Image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTQ_CDpHaWoxmGTSpLbBy_GElYmSHCzCAYvQ&usqp=CAU"></Image>
+              </Box>
+              <Text color="teal">{elem?.place || ""}</Text>
+            </Flex>
             <Box>
               {" "}
               <Tag
@@ -84,17 +79,16 @@ export const CardTravel = () => {
                 borderRadius="full"
                 color="white"
               >
-                <TagLabel>6D-5N</TagLabel>
+                <TagLabel>{elem?.duration || "2D-3N"}</TagLabel>
               </Tag>
             </Box>
           </Flex>
         </Box>
-        {/* 55555555............*/}
         <Box>
           <Flex margin="15px  5px" justifyContent={"space-between"}>
             <Box>
               <Flex margin=" 5px 5px 0 0 ">
-                <Text margin="0 5px 0 0">2000</Text>
+                <Text margin="0 5px 0 0">{elem?.price || 2000}</Text>
                 <Text color="gray">onwards</Text>
               </Flex>
             </Box>
