@@ -3,8 +3,6 @@ import { Box, Image, Text } from "@chakra-ui/react";
 
 export const Card1 = ({ elem }) => {
 
-  const [item, setItem] = useState({});
-
   return (
     <Box
       adding={"12px"}
