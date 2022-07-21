@@ -19,7 +19,6 @@ import { Card1 } from "../CardComponents/Card1";
 export default function MediumSlider({ arr }) {
   console.log("from medium slider : ", arr);
   return (
-    <SliderWrapper>
       <Swiper
         key={Date.now()}
         slidesPerView={4}
@@ -41,9 +40,6 @@ export default function MediumSlider({ arr }) {
             </SwiperSlide>
           ))}
       </Swiper>
-    </SliderWrapper>
   );
 }
 
-const SliderWrapper = Styled.div`
-`;

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Box, Image, Flex, Text, Heading } from "@chakra-ui/react";
+import { Box, Image, Flex, Text, Heading, SimpleGrid } from "@chakra-ui/react";
 import BasicSlider from "../components/UsableSliders/BasicSlider";
 import MediumSlider from "../components/UsableSliders/MediumSlider";
 import AdvancedSlider from "../components/UsableSliders/AdvancedSlider";
@@ -133,7 +133,7 @@ export const LandingPage = () => {
             through their content. Kudos to Tripoto's best creators for May
             2022!
           </Text>
-
+{/* <SimpleGrid columns={2} spacingX='200px' spacingY='200px'> */}
           <Flex
             h="600px"
             justifyContent={"space-between"}
@@ -155,6 +155,7 @@ export const LandingPage = () => {
               src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1657797979_10_1.jpg"
             />
           </Flex>
+          {/* </SimpleGrid> */}
           <Heading as="h2" size="xl" margin={"55px 0 25px 0"}>
             Plan Your Next Trip Using Tripoto's Complete Destination Guides
           </Heading>

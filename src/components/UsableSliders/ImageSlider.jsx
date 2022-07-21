@@ -19,7 +19,6 @@ import { CardBasic } from "../CardComponents/CardBasic";
 export default function ImageSlider({ arr }) {
   console.log(arr, " array from basic slider");
   return (
-    <SliderWrapper>
       <Swiper
         key={Date.now()}
         slidesPerView={4}
@@ -41,14 +40,6 @@ export default function ImageSlider({ arr }) {
             </SwiperSlide>
           ))}
       </Swiper>
-    </SliderWrapper>
   );
 }
 
-const SliderWrapper = Styled.div`
-  /* width:75%;
-  margin:auto; */
-  /* height: 350px;
-  border: 1px solid green; */
-  /* padding:10px; */
-`;
