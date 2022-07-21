@@ -111,11 +111,11 @@ const Navbar = () => {
             
             </div>
             <div>
-            <i class="fa-solid fa-bag-shopping" ></i>
+            <i className="fa-solid fa-bag-shopping" ></i>
             <div>Packages</div>
             </div>
             <div>
-            <i class="fa-solid fa-bullhorn" ></i>
+            <i className="fa-solid fa-bullhorn" ></i>
              <div> Forums</div>
             </div>
         </div>

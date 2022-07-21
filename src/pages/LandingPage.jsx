@@ -1,15 +1,10 @@
 import React from "react";
 import { Box, Image, Flex, Divider } from "@chakra-ui/react";
-// import {  Image, Flex } from "@chakra-ui/react";
 import BasicSlider from "../components/UsableSliders/BasicSlider";
 import MediumSlider from "../components/UsableSliders/MediumSlider";
 import AdvancedSlider from "../components/UsableSliders/AdvancedSlider";
-// import Navbar from "../components/Navbar/Navbar"
-// import styles from "../Styles/HomePage.module.css"
-// import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { getDataAPI } from "../Redux/DataReducer/action";
-// import { Box } from "@chakra-ui/react";
 import Slider from "../components/Slider/Slider";
 import Navbar from "../components/Navbar/Navbar"
 import styles from "../Styles/HomePage.module.css"
@@ -20,9 +15,7 @@ import { Input } from "@chakra-ui/react";
 export const LandingPage = () => {
   return (
     <Box>
-        {/* <Navbar /> */}
         <div className={styles.HomePageWrapper}>
-     <Navbar />
      <div>
         <img 
             className={styles.TopImageWithInput} src="https://cdn1.tripoto.com/assets/2.9/img/home_banner_road.jpg" 
