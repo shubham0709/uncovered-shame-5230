@@ -50,6 +50,9 @@ export default function BasicSlider() {
 }
 
 const SliderWrapper = Styled.div`
-  width:75%;
-  margin:auto;
+  /* width:75%;
+  margin:auto; */
+  /* height: 350px;
+  border: 1px solid green; */
+  /* padding:10px; */
 `;

@@ -53,6 +53,7 @@ export default function MediumSlider() {
 }
 
 const SliderWrapper = Styled.div`
-  width:75%;
-  margin:auto;
+  /* width:75%;
+  margin:auto; */
+  /* border: 1px solid green; */
 `;
