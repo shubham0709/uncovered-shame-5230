@@ -18,7 +18,6 @@ import { Card1 } from "../CardComponents/Card1";
 
 export default function MediumSlider({ arr }) {
   return (
-    <SliderWrapper>
       <Swiper
         key={Date.now()}
         slidesPerView={4}
@@ -39,28 +38,7 @@ export default function MediumSlider({ arr }) {
               <Card1 elem={elem} />
             </SwiperSlide>
           ))}
-        {/* <SwiperSlide>
-          <CardBasic />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CardBasic />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CardBasic />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CardBasic />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CardBasic />
-        </SwiperSlide> */}
       </Swiper>
-    </SliderWrapper>
   );
 }
 
-const SliderWrapper = Styled.div`
-  /* width:75%;
-  margin:auto; */
-  /* border: 1px solid green; */
-`;
