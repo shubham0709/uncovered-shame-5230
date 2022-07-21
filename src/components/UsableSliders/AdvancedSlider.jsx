@@ -16,7 +16,6 @@ import { Image } from "@chakra-ui/react";
 import { CardTravel } from "../CardComponents/CardTravel";
 
 export default function AdvancedSlider({ arr, limit }) {
-  console.log("arr from advanced slider", arr);
   return (
     <SliderWrapper>
       <Swiper

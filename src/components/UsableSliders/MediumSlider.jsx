@@ -17,7 +17,6 @@ import { CardBasic } from "../CardComponents/CardBasic";
 import { Card1 } from "../CardComponents/Card1";
 
 export default function MediumSlider({ arr }) {
-  console.log("from medium slider : ", arr);
   return (
     <SliderWrapper>
       <Swiper

@@ -17,7 +17,6 @@ import { Card1 } from "../CardComponents/Card1";
 import { CardBasic } from "../CardComponents/CardBasic";
 
 export default function ImageSlider({ arr }) {
-  console.log(arr, " array from basic slider");
   return (
     <SliderWrapper>
       <Swiper

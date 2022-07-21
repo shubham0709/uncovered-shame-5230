@@ -12,7 +12,6 @@ export const CardList = () => {
   // const card_2 = useSelector((state) => state.AppReducer.cards);
   const [ndata, setNdata] = useState([]);
 
-  console.log("ndata", ndata);
   const getHandleCard_1 = useCallback(() => {
     dispatch(getDataCard_1());
     for (let i = 0; i < 2; i++) {

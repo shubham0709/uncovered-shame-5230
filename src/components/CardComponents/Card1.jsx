@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Box, Image, Text } from "@chakra-ui/react";
 
 export const Card1 = ({ elem }) => {
-  console.log(elem, " card from  card1 ");
   const [item, setItem] = useState({});
 
   return (

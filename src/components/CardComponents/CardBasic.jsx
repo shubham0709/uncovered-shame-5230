@@ -2,7 +2,6 @@ import React from "react";
 import { Box, Image, Text, HStack, Flex } from "@chakra-ui/react";
 
 export const CardBasic = ({ elem }) => {
-  console.log(elem, " form card basic");
   return (
     <Box
       adding={"12px"}
