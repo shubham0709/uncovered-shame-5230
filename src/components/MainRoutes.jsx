@@ -1,7 +1,5 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-
-import Homepage from "../pages/Homepage";
 import Singapore from "../pages/Singapore";
 import Dubai from "../pages/Dubai";
 
@@ -15,7 +13,10 @@ const MainRoutes = () => {
       <Route path="/" element={<LandingPage />} />
       <Route path="/collections/dubai" element={<Dubai />} />
       <Route path="/collections/singapore" element={<Singapore />} />
+
       <Route path="/packages" element={<Packages />} />
+
+    
 
     </Routes>
   );

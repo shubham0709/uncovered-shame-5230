@@ -32,6 +32,7 @@ const Navbar = () => {
 
     const dispatch = useDispatch()
     const data = useSelector(state=>state.AppReducer)
+
     // const getData= () =>{
     //     setTimeout(()=>{
     //        dispatch(getDataRelatedToSearch(query))
