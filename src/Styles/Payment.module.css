@@ -1,0 +1,62 @@
+/* .PaymentPagewrapper{
+    border: solid red 2px;
+} */
+.headerWrapper{
+    color: white;
+    position: relative;
+    top:0px;
+    left:0px;
+    right: 0px;
+    background-image: linear-gradient(to right, rgb(172, 210, 224), rgb(36,144,254));
+}
+.innerheaderWrapper{
+    padding: 20px 20px 10px 20px;
+}
+.head{
+    font-size: 18px;
+    font-weight: 600;
+}
+.PaymentAmount{
+    font-size: 18px;
+    font-weight: 600;
+}
+.languagebar{
+    background-image: linear-gradient(to right, rgb(33, 130, 232), rgba(36, 145, 254, 0.669));
+}
+.trustOfRazorpayMainDiv{
+    display: flex;
+    color: grey;
+    height: 23px;
+    background-color: #dddddd;
+    justify-content: space-between;
+    padding:2px 15px 2px 15px
+}
+.innerFlexDiv{
+    display: flex;
+}
+.mobilenumCont{
+    display: flex;
+    justify-content: space-between;
+    padding:5px 15px 2px 15px;
+    height: 45px;
+    border: solid 1px #dddddd;
+    margin: 10px;
+}
+
+.PaymentMethod{
+    width:95%;
+     margin: auto;
+    margin-top: 15px;
+    border: solid red 2px;
+}
+.paymentHead{
+    color:#9f9797;
+    margin-left: 20px;
+}
+/* .FlexMethod{
+    
+} */
+.cardtype{
+    color:grey;
+    font-size: 14px;
+}
