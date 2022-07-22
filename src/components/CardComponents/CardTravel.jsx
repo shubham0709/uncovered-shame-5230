@@ -8,10 +8,25 @@ import {
   Flex,
   Divider,
 } from "@chakra-ui/react";
+import { Link as RouteLink, useNavigate } from "react-router-dom";
+import { saveDataToLocalStorage } from "../../utils/localstorage";
+
+// // {
+//   <RouteLink
+//       to="/booking"
+//       onClick={() => saveDataToLocalStorage("bookingAmount", elem)}
+//     ></RouteLink>
+// }
 export const CardTravel = ({ elem }) => {
+  const navigate = useNavigate();
+  const redirect = () => {
+    saveDataToLocalStorage("bookingAmount", elem);
+    navigate("/booking");
+  };
   return (
     <Box
-    // border={"1px solid red"}
+      // border={"1px solid red"}
+      onClick={() => redirect()}
       adding={"12px"}
       fontFamily="circularairpro-bold, Helvetica, -apple-system,Arial, sans-serif"
       lineHeight="25.7143px"
@@ -107,7 +122,7 @@ export const CardTravel = ({ elem }) => {
           </Flex>
         </Box>
         <Divider border={"1px solid black"} />
-      <Flex margin={"5px 0"}>
+        <Flex margin={"5px 0"}>
           <Box w="30px" h="30px">
             <Image
               margin="5px"
@@ -115,7 +130,12 @@ export const CardTravel = ({ elem }) => {
               borderRadius={"50%"}
             ></Image>
           </Box>
-          <Text color="black.500" fontSize={"15px"} margin={"8px"} fontWeight="500">
+          <Text
+            color="black.500"
+            fontSize={"15px"}
+            margin={"8px"}
+            fontWeight="500"
+          >
             {" "}
             Tripoto Verification Partner
           </Text>
