@@ -14,7 +14,6 @@ import {
 } from "@chakra-ui/react";
 import {
   saveDataToLocalStorage,
-  getDataFromLocalStorage,
 } from "../../utils/localstorage";
 import React, { useState } from "react";
 
@@ -31,7 +30,7 @@ export default function CustoemrDetailForm() {
   let arr = ["1", "2", "3", "4", "5", "6", "7", "9", "0"];
   let ans = "";
   for (let i = 0; i < priceStr.length; i++) {
-    if (arr.indexOf(priceStr[i]) != -1) {
+    if (arr.indexOf(priceStr[i]) !== -1) {
       ans += priceStr[i];
     }
   }
