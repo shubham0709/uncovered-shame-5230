@@ -12,12 +12,12 @@ import {
   Text,
   Box,
 } from "@chakra-ui/react";
-import {
-  saveDataToLocalStorage,
-} from "../../utils/localstorage";
+import { saveDataToLocalStorage } from "../../utils/localstorage";
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function CustoemrDetailForm() {
+  const navigate = useNavigate();
   const [countOfPeople, setCountOfPeople] = React.useState(1);
   const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
@@ -26,7 +26,6 @@ export default function CustoemrDetailForm() {
   const [date, setDate] = useState("");
   const [typeOfRoom, setTypeOfRoom] = useState("");
   let priceStr = JSON.parse(localStorage.getItem("bookingAmount")).price;
-
   let arr = ["1", "2", "3", "4", "5", "6", "7", "9", "0"];
   let ans = "";
   for (let i = 0; i < priceStr.length; i++) {
@@ -49,18 +48,20 @@ export default function CustoemrDetailForm() {
       typeOfRoom: typeOfRoom,
     };
     saveDataToLocalStorage("userDetails", userDetails);
+    navigate("/proceedToPaymentPage");
   };
   return (
     <>
       <Box height="69px" width="100%" backgroundColor="#2f9bdb"></Box>
       <Stack minH={"100vh"} direction={{ base: "column", md: "row" }}>
         <Flex>
-          <div
+          <Box
+            pb="10px"
             style={{
               boxShadow:
                 "rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px",
               margin: "auto",
-              height: "100vh",
+              height: "auto",
             }}
           >
             <Flex p={8} flex={1} align={"center"} justify={"center"}>
@@ -162,7 +163,7 @@ export default function CustoemrDetailForm() {
                 </Stack>
               </Stack>
             </Flex>
-          </div>
+          </Box>
         </Flex>
       </Stack>
     </>
