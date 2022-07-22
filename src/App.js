@@ -10,8 +10,8 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      {/* <MainRoutes />*/}
-    <ProceedToPaymentPage />
+      <MainRoutes />
+    {/* <ProceedToPaymentPage /> */}
    
       <Footer />
     </div>
