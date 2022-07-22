@@ -7,6 +7,8 @@ import { LandingPage } from "../pages/LandingPage";
 import { Booking } from "./Packages/Booking";
 import Packages from "../pages/Packages";
 import ProceedToPaymentPage from "../pages/ProceedToPaymentPage";
+import LoginModal from "./LoginSignup/Login";
+import SignupModal from "./LoginSignup/Signup";
 
 const MainRoutes = () => {
   return (
@@ -17,6 +19,8 @@ const MainRoutes = () => {
       <Route path="/booking" element={<Booking />} />
       <Route path="/packages" element={<Packages />} />
       <Route path="/proceedToPaymentPage" element={<ProceedToPaymentPage />} />
+      <Route path="/login" element={<LoginModal />} />
+      <Route path="/signup" element={<SignupModal />} />
     </Routes>
   );
 };
