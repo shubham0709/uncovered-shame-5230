@@ -3,7 +3,7 @@ import { Box,Text, Flex } from "@chakra-ui/react";
 import SliderPackages from "./SliderPackage";
 import { OverviewPackage } from "./OverviewPackage";
 import CustoemrDetailForm from "../CustomerDetailsProceedToBook/CustomerDetailsForm";
-export const Packages = () => {
+export const Booking = () => {
   return (
     <Box margin={"80px 0 0 0" } textAlign="left" h="2750px" border="1px solid green">
     <Flex margin={"0 100px" } fontWeight="400"> 
