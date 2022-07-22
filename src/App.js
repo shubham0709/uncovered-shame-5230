@@ -11,8 +11,8 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      {/* <MainRoutes /> */}
-      <ScrollingExample />
+      <MainRoutes />
+      {/* <ScrollingExample /> */}
     {/* <ProceedToPaymentPage /> */}
      <Footer />
     </div>
