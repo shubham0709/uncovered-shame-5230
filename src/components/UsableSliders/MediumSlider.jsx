@@ -14,45 +14,30 @@ import "./styles.css";
 import { Pagination, Navigation } from "swiper";
 import { Image } from "@chakra-ui/react";
 import { CardBasic } from "../CardComponents/CardBasic";
+import { Card1 } from "../CardComponents/Card1";
 
-export default function MediumSlider() {
+export default function MediumSlider({ arr, limit, setNavigation }) {
   return (
-    <SliderWrapper>
-      <Swiper
-        key={Date.now()}
-        slidesPerView={4}
-        spaceBetween={30}
-        slidesPerGroup={4}
-        loop={true}
-        loopFillGroupWithBlank={true}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Pagination, Navigation]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <CardBasic />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CardBasic />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CardBasic />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CardBasic />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CardBasic />
-        </SwiperSlide>
-      </Swiper>
-    </SliderWrapper>
+    <Swiper
+      key={Date.now()}
+      slidesPerView={limit || 4}
+      spaceBetween={30}
+      slidesPerGroup={limit || 4}
+      loop={true}
+      loopFillGroupWithBlank={true}
+      pagination={{
+        clickable: true,
+      }}
+      navigation={setNavigation === false ? false : true}
+      modules={[Pagination, Navigation]}
+      className="mySwiper"
+    >
+      {arr?.length > 0 &&
+        arr.map((elem, i) => (
+          <SwiperSlide key={i}>
+            <Card1 elem={elem} />
+          </SwiperSlide>
+        ))}
+    </Swiper>
   );
 }
-
-const SliderWrapper = Styled.div`
-  width:75%;
-  margin:auto;
-`;

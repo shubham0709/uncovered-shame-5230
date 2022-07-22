@@ -1,7 +1,6 @@
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import Styled from "styled-components";
 
 // Import Swiper styles
 import "swiper/css";
@@ -11,38 +10,33 @@ import "swiper/css/navigation";
 import "./styles.css";
 
 // import required modules
-import { Pagination, Navigation } from "swiper";
+import { Autoplay, Pagination, Navigation } from "swiper";
 import { Image } from "@chakra-ui/react";
-import { CardTravel } from "../CardComponents/CardTravel";
 
-export default function AdvancedSlider({ arr, limit }) {
+export default function AutoplayImageSlider({ arr, borderRad }) {
   return (
-    <SliderWrapper>
+    <>
       <Swiper
-        key={Date.now()}
-        slidesPerView={limit || 3}
         spaceBetween={30}
-        slidesPerGroup={limit || 3}
-        loop={true}
-        loopFillGroupWithBlank={true}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         pagination={{
           clickable: true,
         }}
         navigation={true}
-        modules={[Pagination, Navigation]}
+        modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
         {arr?.length > 0 &&
           arr.map((elem, i) => (
             <SwiperSlide key={i}>
-              <CardTravel elem={elem} />
+              <Image src={elem.image || elem} borderRadius={borderRad || 0} />
             </SwiperSlide>
           ))}
       </Swiper>
-    </SliderWrapper>
+    </>
   );
 }
-
-const SliderWrapper = Styled.div`
-
-`;

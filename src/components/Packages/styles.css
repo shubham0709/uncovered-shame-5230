@@ -1,6 +1,4 @@
-#app {
-  height: 100%;
-}
+#app { height: 100% }
 html,
 body {
   position: relative;
@@ -25,6 +23,8 @@ body {
   text-align: center;
   font-size: 18px;
   background: #fff;
+
+  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
