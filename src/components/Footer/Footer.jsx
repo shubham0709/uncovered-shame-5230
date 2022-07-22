@@ -104,7 +104,7 @@ export default function LargeWithLogoLeft() {
             <Link style={{textDecoration:"none"}} fontSize="md" textDecoration="none" fontWeight="semiBold" textAlign="left" href={'#'}>Tripoto Ai</Link>
           </Stack>
         </SimpleGrid>
-        <Box  paddingBottom="90px" fontWeight="semiBold" fontSize="md">
+        <Box  paddingBottom="50px" fontWeight="semiBold" fontSize="md">
         © All rights reserved.
         </Box>
       </Container>
