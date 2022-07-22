@@ -13,7 +13,7 @@ import "./styles.css";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 import { Button } from "@chakra-ui/react";
 
-export default function ButtonSlider({ arr, bg }) {
+export default function ButtonSlider({ arr, bg, setNavigation }) {
   return (
     <>
       <Swiper
@@ -25,7 +25,7 @@ export default function ButtonSlider({ arr, bg }) {
         pagination={{
           clickable: true,
         }}
-        navigation={true}
+        navigation={setNavigation == false ? false : true}
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
