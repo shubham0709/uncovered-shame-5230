@@ -1,26 +1,166 @@
-.NavbarWrapper{
-    position: fixed;
-    height: 75px;
-    width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-    color:white;
-    left:0px;
-    top:0px;
-    z-index: 1000;
+.NavbarWrapper {
+  position: fixed;
+  height: 75px;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  left: 0px;
+  top: 0px;
+  z-index: 1000;
+  background-color: #2f9bdb;
 }
-.LogoWrapper{
+.LogoWrapper {
+  position: absolute;
+  display: flex;
+  gap: 30px;
+  top: 7px;
+  left: 40px;
+  width: 45%;
+}
+.LogoImage {
+  min-width: 150px;
+  height: 60px;
+}
+.InputDiv {
+  padding: 8px 10px;
+  display: flex;
+  width: 100%;
+  border-radius: 10px;
+  justify-content: space-between;
+  margin: auto;
+  background-color: white;
+  /* border: solid red 2px; */
+}
+.SearchInputbar {
+  width: 100%;
+  outline: none;
+  margin-left: 10px;
+  background-color: white;
+  height: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  /* border: solid black 2px; */
+  margin-top: 5px;
+}
+.SearchIconDiv {
+  position: relative;
+  top: 3px;
+  right: 8px;
+  height: 30px;
+  width: 30px;
+  vertical-align: center;
+  cursor: pointer;
+}
+.SearchIconDiv:hover {
+  background-color: rgb(214, 211, 211);
+  border-radius: 45%;
+}
+.MenuBoxWrapper {
+  position: absolute;
+  right: 35px;
+}
+.MenuWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.Linktab {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 23px 5px;
+  /* margin-right: 10px; */
+}
+/* linkTabs : tabs having dropdown */
+.Linktabs {
+  /* border: solid red 2px; */
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 6px;
+}
+.Linktabs button {
+  font-size: 16px;
+  font-weight: 600;
+  /* border: solid black 2px; */
+}
+.dropDownMainDiv {
+  position: relative;
+  display: inline-block;
+}
+.dropDownButton {
+  /* background-color: #04AA6D; */
+  color: #ffffff;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+.dropDownContent {
+  color: #333333;
+  display: none;
+  background-color: rgb(249, 247, 247);
+  padding: 10px 0px;
+  position: absolute;
+  /* box-shadow: 0px 8px 16px 0px rgba(255,255,255,255); */
+  z-index: 1;
+  /* margin-left: 10px; */
+  width: 250px;
+}
+.dropDownMainDiv:hover .dropDownContent {
+  display: block;
+}
+.DropDownLink {
+  text-align: left;
+  padding: 10px 15px;
+  letter-spacing: 1.3px;
+}
+.DropDownLink:hover {
+  background-color: #f1f1f1;
+}
+
+.GetTheApp {
+  display: none;
+  gap: 30px;
+  position: absolute;
+  top: 5px;
+  right: 40px;
+}
+.DropDownLineBar {
+  height: 3px;
+  margin-bottom: 5px;
+  background-color: white;
+  width: 25px;
+}
+
+.DropDownLineBarWraper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7px;
+  cursor: pointer;
+}
+.ScreenBottomNavBar {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: none;
+  justify-content: space-around;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+}
+@media (max-width: 1150px) {
+  .LogoWrapper {
     position: absolute;
     display: flex;
-    gap:30px;
+    gap: 30px;
     top: 7px;
     left: 40px;
-    width: 45%;
-}
-.LogoImage{
+    width: 40%;
+  }
+  .LogoImage {
     min-width: 150px;
     height: 60px;
-}
-.InputDiv{
+  }
+  .InputDiv {
     padding: 8px 10px;
     display: flex;
     width: 100%;
@@ -28,10 +168,50 @@
     justify-content: space-between;
     margin: auto;
     background-color: white;
-    /* border: solid red 2px; */
+  }
 }
-.SearchInputbar{
-    width:100%;
+@media (max-width: 1080px) {
+  .Linktab {
+    font-size: 12px;
+  }
+  .Linktabs button {
+    font-size: 12px;
+  }
+}
+@media (max-width: 995px) {
+  .MenuBoxWrapper {
+    display: none;
+  }
+  .LogoImage {
+    min-width: 150px;
+    height: 60px;
+  }
+  .LogoImage {
+    min-width: 100px;
+    height: 35px;
+  }
+  .NavbarWrapper {
+    background-color: #2f9bdb;
+    height: 50px;
+  }
+  .InputDiv {
+    position: fixed;
+    left: 20px;
+    top: 50px;
+    left: 10px;
+    right: 10px;
+    flex-direction: row-reverse;
+    display: flex;
+    width: 98%;
+    border: 2px solid grey;
+    border-radius: 0;
+    justify-content: left;
+    margin: auto;
+    background-color: white;
+    /* border: solid red 2px; */
+  }
+  .SearchInputbar {
+    width: 80%;
     outline: none;
     margin-left: 10px;
     background-color: white;
@@ -40,205 +220,24 @@
     font-size: 16px;
     /* border: solid black 2px; */
     margin-top: 5px;
-}
-.SearchIconDiv{
+  }
+  .SearchIconDiv {
     position: relative;
-    top:3px;
-    right: 8px;
+    top: 3px;
+    left: 8px;
     height: 30px;
     width: 30px;
     vertical-align: center;
     cursor: pointer;
-}
-.SearchIconDiv:hover{
-    background-color: rgb(214, 211, 211);
-    border-radius: 45%;
-}
-.MenuBoxWrapper{
-    position: absolute;
-    right: 35px;
-}
-.MenuWrapper{
+  }
+
+  .GetTheApp {
     display: flex;
-    justify-content: center;
-    gap:20px
-}
-.Linktab{
-    text-align: center;
-    font-size: 18px;
-    font-weight: 600;
-    padding:23px 5px;
-    /* margin-right: 10px; */
-}
-/* linkTabs : tabs having dropdown */
-.Linktabs{
-    /* border: solid red 2px; */
-    text-align: center;
-    font-size: 16px;
-    font-weight: 400;
-    padding-top:6px ;
-}
-.Linktabs button{
-    font-size: 16px;
-    font-weight: 600;
-    /* border: solid black 2px; */
-}
-.dropDownMainDiv{
-    position: relative;
-    display: inline-block;
-}
-.dropDownButton{
-    /* background-color: #04AA6D; */
-    color: #ffffff,;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-}
-.dropDownContent{
-    color: #333333;
-    display: none;
-    background-color: rgb(249, 247, 247);
-    padding: 10px 0px;
-    position: absolute;
-    /* box-shadow: 0px 8px 16px 0px rgba(255,255,255,255); */
-    z-index: 1;
-    /* margin-left: 10px; */
-    width:250px
-}
-.dropDownMainDiv:hover .dropDownContent{
-    display: block;
-}
-.DropDownLink{
-    text-align: left;
-    padding:10px 15px;
-    letter-spacing:1.3px;
-
-}
-.DropDownLink:hover{
-    background-color: #f1f1f1; 
-}
-
-.GetTheApp{
-    display: none;
-    gap:30px;position: absolute;
-    top:5px;
-    right: 40px;
-}
-.DropDownLineBar{
-
-    height: 3px;
-    margin-bottom: 5px;
-    background-color: white;
-    width: 25px;
-}
-
-.DropDownLineBarWraper{
+  }
+  .ScreenBottomNavBar {
     display: flex;
-    flex-direction: column;
-    margin-top: 7px;
-    cursor: pointer;
-}
-.ScreenBottomNavBar{
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    display: none;
-    justify-content: space-around;
-    position: fixed; 
-    left: 0px;
-    bottom: 0px;
-    right: 0px;
-}
-@media(max-width:1150px){
-    .LogoWrapper{
-        position: absolute;
-        display: flex;
-        gap:30px;
-        top: 7px;
-        left: 40px;
-        width: 40%;
-    }
-    .LogoImage{
-        min-width: 150px;
-        height: 60px;
-    }
-    .InputDiv{
-        padding: 8px 10px;
-        display: flex;
-        width: 100%;
-        border-radius: 10px;
-        justify-content: space-between;
-        margin: auto;
-        background-color: white;
-    }
-}
-@media(max-width:1080px){
-    .Linktab {
-        font-size: 12px;
-    }
-    .Linktabs button{
-        font-size: 12px;
-    }
-}
-@media(max-width:995px){
-    .MenuBoxWrapper{
-        display: none;
-    }
-    .LogoImage{
-        min-width: 150px;
-        height: 60px;
-    }
-    .LogoImage{
-        min-width: 100px;
-        height: 35px;
-    }
-    .NavbarWrapper{
-        background-color: #2f9bdb;
-        height: 50px;
-    }
-    .InputDiv{
-        position: fixed;
-        left: 20px;
-        top:50px;
-        left:10px;
-        right: 10px;
-        flex-direction: row-reverse;
-        display: flex;
-        width: 98%;
-        border:2px solid grey;
-        border-radius: 0;
-        justify-content: left;
-        margin: auto;
-        background-color: white;
-        /* border: solid red 2px; */
-    }
-    .SearchInputbar{
-        width:80%;
-        outline: none;
-        margin-left: 10px;
-        background-color: white;
-        height: 20px;
-        font-weight: 400;
-        font-size: 16px;
-        /* border: solid black 2px; */
-        margin-top: 5px;
-    }
-    .SearchIconDiv{
-        position: relative;
-        top:3px;
-        left: 8px;
-        height: 30px;
-        width: 30px;
-        vertical-align: center;
-        cursor: pointer;
-    }
-
-    .GetTheApp{
-        display: flex;
-    }
-    .ScreenBottomNavBar{
-        display: flex;
-        background-color: grey;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        padding-top:5px
-  
-    }
+    background-color: grey;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding-top: 5px;
+  }
 }

@@ -13,16 +13,16 @@ import "./styles.css";
 // import required modules
 import { Pagination, Navigation } from "swiper";
 import { Image } from "@chakra-ui/react";
-import { CardTravel } from "../CardComponents/CardTravel";
+import { Card1 } from "../CardComponents/Card1";
+import { CardBasic } from "../CardComponents/CardBasic";
 
-export default function AdvancedSlider({ arr, limit }) {
+export default function ImageSlider({ arr }) {
   return (
-    <SliderWrapper>
       <Swiper
         key={Date.now()}
-        slidesPerView={limit || 3}
+        slidesPerView={4}
         spaceBetween={30}
-        slidesPerGroup={limit || 3}
+        slidesPerGroup={4}
         loop={true}
         loopFillGroupWithBlank={true}
         pagination={{
@@ -35,14 +35,10 @@ export default function AdvancedSlider({ arr, limit }) {
         {arr?.length > 0 &&
           arr.map((elem, i) => (
             <SwiperSlide key={i}>
-              <CardTravel elem={elem} />
+              <Image src={elem.image} borderRadius="5px" />
             </SwiperSlide>
           ))}
       </Swiper>
-    </SliderWrapper>
   );
 }
 
-const SliderWrapper = Styled.div`
-
-`;
