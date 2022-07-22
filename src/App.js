@@ -12,8 +12,7 @@ function App() {
       <Navbar />
       <MainRoutes />
     {/* <ProceedToPaymentPage /> */}
-   
-      <Footer />
+     <Footer />
     </div>
   );
 }
