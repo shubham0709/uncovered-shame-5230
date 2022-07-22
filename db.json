@@ -379,7 +379,7 @@
       ]
     },
     "dubai": {
-      "trending": [
+      "culinary_exps": [
         {
           "image": "https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1640859705_dgt_abshar_500x500.jpg",
           "description": "The Ultimate Dubai Gourmet Trail",
@@ -401,7 +401,7 @@
           "by": "Shilpa Srinivas"
         },
         {
-          "image": "https://static2.tripoto.com/media/filter/tst/img/1269913/TripDocument/1556433721_4862a8acdd301602f0cb0183682bf096.jpg",
+          "image": "https://img.youtube.com/vi/1kNVg2aJ_L8/sddefault.jpg",
           "description": "Dubai Kitchens with Michelin-Star Chef Vineet Bhatia | Visit Dubai",
           "by": ""
         }
@@ -480,7 +480,7 @@
           "logo_text": "Yuven Travel"
         },
         {
-          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1634889093_3_1.jpg",
+          "image": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1657693176_dubai_2.jpg",
           "description": "3N Maldives - Bandos",
           "duration": "6D · 5N",
           "price": 52650,
@@ -568,7 +568,7 @@
           "logo_text": "TravelZiel"
         }
       ],
-      "culinary_exp": [
+      "trending": [
         {
           "image": "https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1640686640_1640627907_181117_kite_beach_paddle_board_group_7.jpeg",
           "description": "10 Instagram-Worthy Locations in Dubai, Millennials Need to Visit at Least Once",
@@ -603,6 +603,17 @@
           "image": "https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1640687368_1640666000_image3.jpeg",
           "description": "पहली विदेश यात्रा के लिए दुबई की तैयारी? जानिए कैसे प्लान करें ये ट्रिप, क्या देखें और कहाँ घूमें",
           "by": "Musafir Rishabh"
+        }
+      ],
+      "watch_the_ultimate": [
+        {
+          "image": "https://img.youtube.com/vi/QmSd8XidTAo/sddefault.jpg"
+        },
+        {
+          "image": "https://img.youtube.com/vi/JFHnH4p4Mn4/sddefault.jpg"
+        },
+        {
+          "image": "https://img.youtube.com/vi/LMZIVF6mCNM/sddefault.jpg"
         }
       ]
     },

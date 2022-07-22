@@ -53,17 +53,19 @@ const Singapore = () => {
 
   return (
     <Box>
-      <iframe
-        width="100%"
-        height="380"
-        src="https://stream.mux.com/ynvXtB01mp4Nor01SVD9TvRTsu00RQ95SPQ/medium.mp4"
-        title="Girl with Binoculars Film_Reimagine Singapore through fresh lenses #SingapoReimagine"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        autoPlay="1"
-        padding="0"
-        margin="0"
-      ></iframe>
+      <Box mt="20px">
+        <iframe
+          width="100%"
+          height="380"
+          src="https://stream.mux.com/XdWcF8Xx02ekQt772XFZgIZXGNlr5BdXO/high.mp4"
+          title="Girl with Binoculars Film_Reimagine Singapore through fresh lenses #SingapoReimagine"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          autoPlay="1"
+          padding="0"
+          margin="0"
+        ></iframe>
+      </Box>
       <Container maxW="90%" textAlign="left">
         <Heading textAlign="left" mt="30px" mb="30px">
           Reimagine Singapore With Tripoto
