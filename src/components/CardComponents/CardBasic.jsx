@@ -4,10 +4,10 @@ import { Box, Image, Text, HStack, Flex } from "@chakra-ui/react";
 export const CardBasic = ({ elem }) => {
   return (
     <Box
-    border="1px solid red"
+    // border="1px solid red"
       adding={"12px"}
       fontFamily="circularairpro-bold, Helvetica, -apple-system,Arial, sans-serif"
-      lineHeight="30.7143px"
+      lineHeight="27.7143px"
       verticalAlign="baseline"
       letterSpacing="normal"
       wordSpacing="1"
@@ -17,6 +17,7 @@ export const CardBasic = ({ elem }) => {
       textAlign={"left"}
       h="300px"
       w="330px"
+      cursor={"pointer"}
     >
       {/* <Text>Travel and Learn with Tripoto's Mindful Retreats</Text> */}
       <Box h="54%">
@@ -37,7 +38,7 @@ export const CardBasic = ({ elem }) => {
             textAlign="left"
             fontSize={"18px"}
             padding="0px"
-            fontWeight="600"
+            fontWeight="550"
             color={"gray.800"}
           >
             {elem?.description || ""}

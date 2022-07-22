@@ -8,12 +8,15 @@ import { useSelector, useDispatch } from "react-redux";
 import { getDataAPI } from "../Redux/DataReducer/action";
 import styles from "../Styles/HomePage.module.css";
 import { Search2Icon } from "@chakra-ui/icons";
-
+import {useSearchParams,useLocation,Link} from "react-router-dom"
 export const LandingPage = () => {
+  const location = useLocation();
+  const [searchParams]=useSearchParams()
+
   const dispatch = useDispatch();
   const { AuthReducer, DataReducer } = useSelector((state) => state);
   useEffect(() => {
-    if (DataReducer.data.length === 0) {
+    if (DataReducer.data.length === 0 ||location.search) {
       dispatch(getDataAPI());
     }
   }, []);
@@ -50,7 +53,7 @@ export const LandingPage = () => {
       {/* Middle Part... */}
       <Box w="85%" margin={" 0 auto"}>
         <Box margin="30px 0">
-          <Flex justifyContent={"space-between"}>
+          <Flex justifyContent={"space-between"}  cursor={"pointer"}>
             <Image
               w="24%"
               src="https://cdn1.tripoto.com/media/filter/tst/img/311219/Image/1657192329_aa.png"
@@ -75,40 +78,40 @@ export const LandingPage = () => {
           lineHeight="30.8px"
           color="RGB(51, 51, 51)"
         >
-          <Heading as="h2" size="xl" margin={"55px 0 25px 0"}>
+          <Heading as="h2" fontSize="25px" margin={"25px 0 20px 0"}>
             In the Spotlight : Partnerships
           </Heading>
-          <MediumSlider arr={DataReducer?.data?.landing?.spotlight || []} />
+          <MediumSlider arr={DataReducer?.data?.landing?.spotlight || []}/>
           <Box margin={"30px 0"}>
             <Image
               borderRadius="5px"
               src="https://cdn1.tripoto.com/media/transfer/img/2224454/Image/1656479622_header_web2.gif"
             />
           </Box>
-          <Heading as="h2" size="xl" margin={"55px 0 25px 0"}>
+          <Heading as="h2" fontSize="25px" margin={"25px 0 20px 0"}>
             Find Best Places to Visit in India in July & August
           </Heading>
           <BasicSlider
             arr={DataReducer?.data?.landing?.find_best_places || []}
           />
-          <Heading as="h2" size="xl" margin={"55px 0 25px 0"}>
+          <Heading as="h2" fontSize="25px" margin={"25px 0 20px 0"}>
             Plan International Trips for July & August
           </Heading>
           <BasicSlider arr={DataReducer?.data?.landing?.checkout_best || []} />
-          <Heading as="h2" size="xl" margin={"55px 0 25px 0"}>
+          <Heading as="h2" fontSize="25px" margin={"25px 0 20px 0"}>
             Check Out Best Hotels and Properties for Every Type of Traveller
           </Heading>
           <AdvancedSlider
             arr={DataReducer?.data?.landing?.travel_learn || []}
           />
 
-          <Heading as="h2" size="xl" margin={"55px 0 25px 0"}>
+          <Heading as="h2" fontSize="25px" margin={"25px 0 20px 0"}>
             Travel and Learn with Tripoto's Mindful Retreats
           </Heading>
           <AdvancedSlider
             arr={DataReducer?.data?.landing?.attend_online || []}
           />
-          <Heading as="h2" size="xl" margin={"55px 0 25px 0"}>
+          <Heading as="h2" fontSize="25px" margin={"25px 0 20px 0"}>
             Book Budget Tour Packages Curated For You
           </Heading>
 
@@ -116,7 +119,7 @@ export const LandingPage = () => {
             arr={DataReducer?.data?.landing?.book_budget || []}
             limit={4}
           />
-          <Heading as="h2" size="xl" margin={"15px 0"}>
+          <Heading as="h2" fontSize="25px" margin={"15px 0"}>
             In the Spotlight: Tripoto Creators of the Month
           </Heading>
           <Text color="black.500" margin={"8px"} fontSize="24px" fontWeight="500"
@@ -133,38 +136,39 @@ export const LandingPage = () => {
             through their content. Kudos to Tripoto's best creators for May
             2022!
           </Text>
-{/* <SimpleGrid columns={2} spacingX='200px' spacingY='200px'> */}
           <Flex
-            h="600px"
+            h="470px"
             justifyContent={"space-between"}
             w="100%"
+            cursor={"pointer"}
+            gridGap="15px"
           >
             <Image
-              w="480px"
+              w="32%"
               borderRadius={"5px"}
               src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1657797228_9.jpg"
             />
             <Image
-              w="480px"
+              w="32%"
               borderRadius={"5px"}
               src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1657797266_8.jpg"
             />
             <Image
-              w="480px"
+              w="32%"
               borderRadius={"5px"}
               src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1657797979_10_1.jpg"
             />
           </Flex>
           {/* </SimpleGrid> */}
-          <Heading as="h2" size="xl" margin={"55px 0 25px 0"}>
+          <Heading as="h2" fontSize="25px" margin={"25px 0 20px 0"}>
             Plan Your Next Trip Using Tripoto's Complete Destination Guides
           </Heading>
           <ImageSlider arr={DataReducer?.data?.landing?.plan_your_next || []} />
       
-          <Heading as="h2" size="xl" margin={"55px 0 25px 0"}>
+          <Heading as="h2" fontSize="25px" margin={"25px 0 20px 0"}>
             Watch Tripoto's Top Travel Vlogs of the Week
           </Heading>
-          <BasicSlider arr={DataReducer?.data?.landing?.watch_tripotos || []} />
+          <BasicSlider arr={DataReducer?.data?.landing?.watch_tripotos || []}  />
     
         </Box>
       </Box>

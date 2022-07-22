@@ -5,7 +5,7 @@ import Dubai from "../pages/Dubai";
 
 // import Homepage from "../pages/Homepage";
 import { LandingPage } from "../pages/LandingPage";
-import { Packages } from "./Packages/Packages";
+import { Packages } from "./Packages/Booking";
 
 const MainRoutes = () => {
   return (

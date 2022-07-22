@@ -11,10 +11,10 @@ import {
 export const CardTravel = ({ elem }) => {
   return (
     <Box
-    border={"1px solid red"}
+    // border={"1px solid red"}
       adding={"12px"}
       fontFamily="circularairpro-bold, Helvetica, -apple-system,Arial, sans-serif"
-      lineHeight="35.7143px"
+      lineHeight="25.7143px"
       verticalAlign="baseline"
       letterSpacing="normal"
       wordSpacing="1px"
@@ -25,12 +25,13 @@ export const CardTravel = ({ elem }) => {
       fontWeight="550"
       h="450px"
       w="470px"
+      cursor={"pointer"}
     >
-      <Box h="45%">
+      <Box h="40%">
         {" "}
         <Image src={elem?.image} alt="cardImage" borderRadius={"5px"} />
       </Box>
-      <Box h="65%">
+      <Box h="55%">
         <Box>
           <Text size={"mg"} variant="solid" color="teal" margin="5px 0">
             Package
@@ -48,9 +49,9 @@ export const CardTravel = ({ elem }) => {
             {elem?.description || ""}
           </Text>
         </Box>
-        <Box margin={"15px 0"}>
+        <Box margin={"8px 0"}>
           <Flex
-            fontSize={"15px"}
+            fontSize={"13px"}
             justifyContent="space-between"
             h="40px"
             padding={"5px"}
@@ -58,10 +59,10 @@ export const CardTravel = ({ elem }) => {
           >
             {" "}
             <Flex>
-              <Box h="20px" w="20px" margin={"8px 8px 0 0 "}>
+              <Box h="20px" w="20px" margin={"5px 5px 0 0 "}>
                 <Image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTQ_CDpHaWoxmGTSpLbBy_GElYmSHCzCAYvQ&usqp=CAU"></Image>
               </Box>
-              <Text color="teal" fontSize={"20px"}>
+              <Text color="teal" fontSize={"18px"}>
                 {elem?.place || "Nanital"}
               </Text>
             </Flex>
@@ -80,13 +81,13 @@ export const CardTravel = ({ elem }) => {
           </Flex>
         </Box>
         <Box>
-          <Flex margin="15px  5px" justifyContent={"space-between"}>
+          <Flex margin="10px  5px" justifyContent={"space-between"}>
             <Box>
               <Flex margin=" 5px 5px 0 0 ">
-                <Text margin="0 8px 0 0" fontSize={"24px"}>
+                <Text margin="0 5px 0 0" fontSize={"18px"}>
                   {elem?.price || 2000}
                 </Text>
-                <Text fontSize={"18px"} color="gray.400">
+                <Text fontSize={"15px"} color="gray.400">
                   onwards
                 </Text>
               </Flex>
@@ -95,7 +96,7 @@ export const CardTravel = ({ elem }) => {
               <Tag
                 size={"xl"}
                 px={4}
-                h={10}
+                h={8}
                 variant="teal"
                 border={"1px solid teal"}
                 color="teal"
@@ -106,22 +107,22 @@ export const CardTravel = ({ elem }) => {
           </Flex>
         </Box>
         <Divider border={"1px solid black"} />
-      <Flex margin={"10px 0"}>
-          <Box w="35px" h="35px">
+      <Flex margin={"5px 0"}>
+          <Box w="30px" h="30px">
             <Image
               margin="5px"
               src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg"
               borderRadius={"50%"}
             ></Image>
           </Box>
-          <Text color="black.500" margin={"6px"} fontWeight="500">
+          <Text color="black.500" fontSize={"15px"} margin={"8px"} fontWeight="500">
             {" "}
             Tripoto Verification Partner
           </Text>
           <Box w="20px" h="20px">
             <Image
-              margin="13px 5px"
-              src="https://i.pinimg.com/736x/9b/13/b0/9b13b0a9206c8c046c55dca5edcb3ce8.jpg"
+              margin="12px 5px"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvePwnAsjmMK75nfDSjeYBvAIGwxUAsUTNrzl3c0s4M9ILsTtOlmC2OOzel9Wwmxmg7Y8&usqp=CAU"
             ></Image>
           </Box>
         </Flex>
