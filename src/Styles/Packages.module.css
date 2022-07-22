@@ -73,11 +73,60 @@
     color: #2197db;;
     font-weight: 640;
   }
+
+
+
+  .Belowpart{
+    width: 85%;
+    margin: auto;
+    /* border: solid red 2px; */
+  }
+
+   /* ====Customizable Tour Packages=========  */
+
+  .customizableToorPackages{
+    text-align: left;
+    margin-bottom: 50px;
+  }
+  .PackageHead{
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .Packagedescription{
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .PackagecardWrapper{
+    display: flex;
+    gap:25px;
+  }
+  .PackageCa4rd{
+     border-radius: 15px;
+  }
+  .PacakgeCardImage{
+    border-radius: 7px;
+    width: 100%;
+
+  }
+
+  /* ======Lower descriptive part ========*/
+
+  .DescriptiveDivwrapper{
+     text-align: left;
+  }
+  .descriptiveSubpartWrapper{
+    padding-top: 10px;
+    margin: 10px;
+  }
+
   @media(max-width:995px){
     .SearchBarHead{
    
         font-size: 25px;
         font-weight: 600;
        
+      }
+      .PackagecardWrapper{
+        flex-direction: column;
       }
   }
