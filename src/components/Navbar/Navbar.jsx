@@ -3,6 +3,7 @@ import styles from "../../Styles/Navbar.module.css"
 import {TriangleDownIcon,Search2Icon} from "@chakra-ui/icons"
 import { Link } from 'react-router-dom'
 import { Input } from '@chakra-ui/react'
+import { useDispatch } from 'react-redux'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
   const Inspirations = [
     {to:'#',title:'Visit Dubai'},
@@ -26,7 +27,16 @@ import { Input } from '@chakra-ui/react'
     {to:'#',title:'Import Blog'},
   ]
 const Navbar = () => {
-    const [value,setValue] = React.useState(false)
+    const [value,setValue] = React.useState(false);
+    const [query,setQuery] = React.useState("")
+
+    const dispatch = useDispatch()
+    const data = useSelector(state=>state.AppReducer)
+    const getData= () =>{
+        setTimeout(()=>{
+           dispatch(getDataRelatedToSearch(query))
+        },3000)
+    }
 
         var myScrollFunc = function () {
             var y = window.scrollY;
@@ -43,6 +53,10 @@ const Navbar = () => {
           </div>
           <div className={styles.InputDiv}  style={value ?{ display:"flex"  } : {display:'none'}} >
                 <input
+                onChange={()=>{
+                    setQuery(e.target.value);
+
+                }}
                    className={styles.SearchInputbar} 
                    placeholder="Search for itineraries, destinations, hotels or activities" 
                 />
@@ -111,11 +125,11 @@ const Navbar = () => {
             
             </div>
             <div>
-            <i class="fa-solid fa-bag-shopping" ></i>
+            <i className="fa-solid fa-bag-shopping" ></i>
             <div>Packages</div>
             </div>
             <div>
-            <i class="fa-solid fa-bullhorn" ></i>
+            <i className="fa-solid fa-bullhorn" ></i>
              <div> Forums</div>
             </div>
         </div>
