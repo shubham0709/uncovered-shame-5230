@@ -126,7 +126,9 @@ const Navbar = () => {
             </div>
             <div>
             <i className="fa-solid fa-bag-shopping" ></i>
-            <div>Packages</div>
+             <Link to="/packages" >
+                 Packages
+             </Link>
             </div>
             <div>
             <i className="fa-solid fa-bullhorn" ></i>

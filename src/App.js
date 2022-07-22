@@ -9,8 +9,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      {/* <MainRoutes /> */}
-      {/* <CustoemrDetailForm /> */}
+      <MainRoutes />
       <Packages />
       <Footer />
     </div>
