@@ -5,7 +5,7 @@ import Dubai from "../pages/Dubai";
 
 // import Homepage from "../pages/Homepage";
 import { LandingPage } from "../pages/LandingPage";
-import { Packages } from "./Packages/Packages";
+import Packages from "../pages/Packages";
 
 const MainRoutes = () => {
   return (
@@ -13,7 +13,10 @@ const MainRoutes = () => {
       <Route path="/" element={<LandingPage />} />
       <Route path="/collections/dubai" element={<Dubai />} />
       <Route path="/collections/singapore" element={<Singapore />} />
-      <Route path="/collections/packages" element={<Packages/>} />
+
+      <Route path="/packages" element={<Packages />} />
+
+    
 
     </Routes>
   );
