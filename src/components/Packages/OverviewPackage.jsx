@@ -11,7 +11,7 @@ import React from "react";
 
 export const OverviewPackage = () => {
   return (
-    <Box w="100%" border={"1px solid red"} textAlign="left"
+    <Box w="100%" textAlign="left"
     mb={"20px"}
     >
       <Divider />
@@ -83,8 +83,6 @@ export const OverviewPackage = () => {
               </ListItem>
             </Box>
           </UnorderedList>
-
-          {/* 222222222 */}
           <Text fontWeight={"700"}>Where you will stay</Text>
           <UnorderedList>
             <Box margin={"10px 30px"}>
@@ -106,7 +104,6 @@ export const OverviewPackage = () => {
           </UnorderedList>
 
           <Text fontWeight={"700"}>At the retreat, you will experience:</Text>
-          {/* 3333333 */}
           <UnorderedList>
             <Box margin={"10px 30px"}>
               <ListItem>
@@ -192,7 +189,7 @@ export const OverviewPackage = () => {
         </Flex>
 
   
-    <Text fontSize={"22px"}>THIS IS AN ALL-INCLUSIVE RETREAT WITH STAY, MEALS & ACTIVITIES INCLUDED IN THE PRICE. FILL THE FORM ON THIS PAGE TO GET THE LOWEST PRICE! </Text>
+    <Text marginTop={"10px"} fontSize={"22px"}>THIS IS AN ALL-INCLUSIVE RETREAT WITH STAY, MEALS & ACTIVITIES INCLUDED IN THE PRICE. FILL THE FORM ON THIS PAGE TO GET THE LOWEST PRICE! </Text>
       </Box>
     </Box>
   );

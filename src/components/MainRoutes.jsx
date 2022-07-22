@@ -15,11 +15,7 @@ const MainRoutes = () => {
       <Route path="/collections/dubai" element={<Dubai />} />
       <Route path="/collections/singapore" element={<Singapore />} />
       <Route path="/booking" element={<Booking />} />
-
       <Route path="/packages" element={<Packages />} />
-
-    
-
     </Routes>
   );
 };
