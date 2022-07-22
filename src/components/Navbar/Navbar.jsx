@@ -30,13 +30,13 @@ const Navbar = () => {
     const [value,setValue] = React.useState(false);
     const [query,setQuery] = React.useState("")
 
-    const dispatch = useDispatch()
-    const data = useSelector(state=>state.AppReducer)
-    const getData= () =>{
-        setTimeout(()=>{
-           dispatch(getDataRelatedToSearch(query))
-        },3000)
-    }
+    // const dispatch = useDispatch()
+    // const data = useSelector(state=>state.AppReducer)
+    // const getData= () =>{
+    //     setTimeout(()=>{
+    //        dispatch(getDataRelatedToSearch(query))
+    //     },3000)
+    // }
 
         var myScrollFunc = function () {
             var y = window.scrollY;
@@ -53,7 +53,7 @@ const Navbar = () => {
           </div>
           <div className={styles.InputDiv}  style={value ?{ display:"flex"  } : {display:'none'}} >
                 <input
-                onChange={()=>{
+                onChange={(e)=>{
                     setQuery(e.target.value);
 
                 }}
