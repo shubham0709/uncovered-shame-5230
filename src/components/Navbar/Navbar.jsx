@@ -2,8 +2,9 @@ import React from "react";
 import styles from "../../Styles/Navbar.module.css";
 import { TriangleDownIcon, Search2Icon } from "@chakra-ui/icons";
 import { Link } from "react-router-dom";
-import { Input } from "@chakra-ui/react";
+import { Box, Input, useDisclosure } from "@chakra-ui/react";
 import { useDispatch, useSelector } from "react-redux";
+import LoginModal from "../LoginSignup/Login";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Inspirations = [
   { to: "/collections/dubai", title: "Visit Dubai" },
@@ -27,18 +28,19 @@ const PublishTrip = [
   { to: "#", title: "Import Blog" },
 ];
 const Navbar = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
   const [value, setValue] = React.useState(false);
   const [query, setQuery] = React.useState("");
 
   const dispatch = useDispatch();
   const data = useSelector((state) => state.AppReducer);
 
-  const openLoginModal = () => {};
-  const openSignUpModal = () => {};
+  // const openLoginModal = () => {};
+  // const openSignUpModal = () => {};
 
-  const handleSignIn = () => {
-    console.log("handling sign in");
-  };
+  // const handleSignIn = () => {
+  //   console.log("handling sign in");
+  // };
 
   var myScrollFunc = function () {
     var y = window.scrollY;
@@ -114,9 +116,9 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
-            <div className={styles.Linktab} onClick={() => handleSignIn()}>
-              Sign in
-            </div>
+            <Box className={styles.Linktab}>
+              <LoginModal isOpen={isOpen} onOpen={onOpen} onClose={onClose} />
+            </Box>
           </div>
         </div>
 
