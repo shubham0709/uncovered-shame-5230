@@ -156,8 +156,8 @@ export default function CustoemrDetailForm() {
                 </FormControl>
                 <Box>
                   <Flex>
-                    <Text>Amount : </Text>
-                    <Text>{price * countOfPeople}</Text>
+                    <Text fontSize="16px" fontWeight="600">Amount : </Text>
+                    <Text>Rs. {price * countOfPeople}</Text>
                   </Flex>
                 </Box>
                 <Box>
