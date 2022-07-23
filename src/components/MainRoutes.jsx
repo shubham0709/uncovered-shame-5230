@@ -10,6 +10,7 @@ import ProceedToPaymentPage from "../pages/ProceedToPaymentPage";
 import LoginModal from "./LoginSignup/Login";
 import SignupModal from "./LoginSignup/Signup";
 import ErrorPage from "../pages/ErrorPage";
+import Forum from "../components/Forum/Forum";
 
 const MainRoutes = () => {
   return (
@@ -22,6 +23,7 @@ const MainRoutes = () => {
       <Route path="/proceedToPaymentPage" element={<ProceedToPaymentPage />} />
       <Route path="/login" element={<LoginModal />} />
       <Route path="/signup" element={<SignupModal />} />
+      <Route path="/forum" element={<Forum />} />
       <Route path="/*" element={<ErrorPage />} />
     </Routes>
   );
