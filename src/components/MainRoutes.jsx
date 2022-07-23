@@ -10,7 +10,11 @@ import ProceedToPaymentPage from "../pages/ProceedToPaymentPage";
 import LoginModal from "./LoginSignup/Login";
 import SignupModal from "./LoginSignup/Signup";
 import ErrorPage from "../pages/ErrorPage";
+
+import Beach from "./BeachComponent/Beach";
+
 import OtpPage from "../pages/OtpPage";
+
 
 const MainRoutes = () => {
   return (
@@ -25,6 +29,8 @@ const MainRoutes = () => {
       <Route path="/signup" element={<SignupModal />} />
       <Route path="/otpPage" element={<OtpPage />} />
       <Route path="/*" element={<ErrorPage />} />
+      <Route path="/beach" element={<Beach />} />
+
     </Routes>
   );
 };
