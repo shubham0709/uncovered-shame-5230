@@ -10,6 +10,7 @@ import ProceedToPaymentPage from "../pages/ProceedToPaymentPage";
 import LoginModal from "./LoginSignup/Login";
 import SignupModal from "./LoginSignup/Signup";
 import ErrorPage from "../pages/ErrorPage";
+import Beach from "./BeachComponent/Beach";
 
 const MainRoutes = () => {
   return (
@@ -23,6 +24,8 @@ const MainRoutes = () => {
       <Route path="/login" element={<LoginModal />} />
       <Route path="/signup" element={<SignupModal />} />
       <Route path="/*" element={<ErrorPage />} />
+      <Route path="/beach" element={<Beach />} />
+
     </Routes>
   );
 };
