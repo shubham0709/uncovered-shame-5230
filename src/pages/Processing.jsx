@@ -26,9 +26,9 @@ const Processing = () => {
                      <span style={{fontSize:"18px",fontWeight:"600",marginTop:"20px"}}>Please make payment !</span> 
                   
                   
-                    <p style={{marginTop:"30px"}} >Please do not refresh the page or click the 
-                        <span style={{fontSize:"18px",fontWeight:"600"}}>"Back"</span> or
-                        <span style={{fontSize:"18px",fontWeight:"600"}}>"Refresh"</span>
+                    <p style={{marginTop:"30px"}} >Please do not 
+                        <span style={{fontSize:"18px",fontWeight:"600"}}>"refresh"</span> the page or click on the 
+                        <span style={{fontSize:"18px",fontWeight:"600"}}>"Back"</span>  or
                         <span style={{fontSize:"18px",fontWeight:"600"}}>"Close"</span>  button of your browser</p>
                    </div>
              </div>
