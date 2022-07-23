@@ -4,7 +4,7 @@ import SliderPackages from "./SliderPackage";
 import CustoemrDetailForm from "../CustomerDetailsProceedToBook/CustomerDetailsForm";
 export const Booking = () => {
   useEffect(()=>{
-    // window.location.reload()
+    window.scroll(0, 0);
   },[])
   return (
     <div>
