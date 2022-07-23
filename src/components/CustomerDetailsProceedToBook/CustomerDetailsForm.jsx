@@ -11,12 +11,12 @@ import {
   Image,
   Text,
   Box,
-  Radio, RadioGroup 
+  Radio,
+  RadioGroup,
 } from "@chakra-ui/react";
 import { saveDataToLocalStorage } from "../../utils/localstorage";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
 
 export default function CustoemrDetailForm() {
   const navigate = useNavigate();
@@ -26,8 +26,8 @@ export default function CustoemrDetailForm() {
   const [contact, setContact] = useState("");
   const [departureCity, setDepartureCity] = useState("");
   const [date, setDate] = useState("");
-//   const [typeOfRoom, setTypeOfRoom] = useState("");
-  const [value,setValue] = React.useState("")
+  //   const [typeOfRoom, setTypeOfRoom] = useState("");
+  const [value, setValue] = React.useState("");
   let priceStr = JSON.parse(localStorage.getItem("bookingAmount")).price;
   let arr = ["1", "2", "3", "4", "5", "6", "7", "9", "0"];
   let ans = "";
@@ -39,6 +39,7 @@ export default function CustoemrDetailForm() {
 
   let price = Number(ans) || 10000;
   price = Number(price);
+  console.log(price);
 
   const proceedToNext = () => {
     const userDetails = {
@@ -138,25 +139,32 @@ export default function CustoemrDetailForm() {
                 </FormControl>
 
                 <FormControl id="bedRoomOccupancy">
-                <Text fontSize="16px" fontWeight="600" paddingBottom={15}>Type Of room</Text>
-                <RadioGroup onChange={setValue} value={value} >
-                   <Stack direction='column'>
-                      <Radio value='deluxe room on twin sharing'>deluxe room on twin sharing</Radio>
-                      <Radio value='log hut cabins on triple sharing'>log hut cabins on triple sharing</Radio>
-                   </Stack>
-                </RadioGroup>
-                 
+                  <Text fontSize="16px" fontWeight="600" paddingBottom={15}>
+                    Type Of room
+                  </Text>
+                  <RadioGroup onChange={setValue} value={value}>
+                    <Stack direction="column">
+                      <Radio value="deluxe room on twin sharing">
+                        deluxe room on twin sharing
+                      </Radio>
+                      <Radio value="log hut cabins on triple sharing">
+                        log hut cabins on triple sharing
+                      </Radio>
+                    </Stack>
+                  </RadioGroup>
                 </FormControl>
 
                 <FormControl id="whatsAppUpdate">
-                   <Flex gap="7px">
-                       <Checkbox />
-                       <Text>Send me updates for this booking on WhatsApp</Text>
-                    </Flex>
+                  <Flex gap="7px">
+                    <Checkbox />
+                    <Text>Send me updates for this booking on WhatsApp</Text>
+                  </Flex>
                 </FormControl>
                 <Box>
                   <Flex>
-                    <Text fontSize="16px" fontWeight="600">Amount : </Text>
+                    <Text fontSize="16px" fontWeight="600">
+                      Amount :{" "}
+                    </Text>
                     <Text>Rs. {price * countOfPeople}</Text>
                   </Flex>
                 </Box>
