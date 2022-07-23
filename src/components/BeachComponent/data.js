@@ -46,6 +46,100 @@ let topbeach = [
     }
 ]
 
+let packages = [
+    {
+        "image": "https://cdn1.tripoto.com/media/filter/tst/img/319486/Image/1585040093_package_flights_not_included_2x.png",
+        "description": "4 Days in Maldives",
+        "place": "Maldives",
+        "duration": "4D · 3N",
+        "price": "₹ 32,000",
+        "logo": "https://cdn1.tripoto.com/media/filter/mss/img/411197/UserPhoto/1552395968_oyo.jpg",
+        "logo_text": "OYO Total Holidays"
+    },
+    {
+        "image": "https://cdn1.tripoto.com/media/filter/tst/img/1524784/Image/1567494998_andaman_app.jpg",
+        "description": "Andaman Packages",
+        "place": "Andaman",
+        "duration": "5D · 4N",
+        "price": "₹ 18,000",
+        "logo": "https://cdn1.tripoto.com/media/filter/mss/img/1358539/UserPhoto/1553849222_logo.jpg",
+        "logo_text": "Tripoto Verified Partners"
+    },
+    {
+        "image": "https://cdn1.tripoto.com/media/filter/tst/img/319486/Image/1585040093_package_flights_not_included_2x.png",
+        "description": "Experience Mauritius",
+        "place": "Mauritius",
+        "duration": "7D · 6N",
+        "price": "₹ 68,000",
+        "logo": "https://cdn1.tripoto.com/media/filter/mss/img/411197/UserPhoto/1552395968_oyo.jpg",
+        "logo_text": "OYO Total Holidays"
+    },
+    {
+        "image": "https://cdn1.tripoto.com/media/filter/tst/img/319486/Image/1585040093_package_flights_not_included_2x.png",
+        "description": "7 Days in Mauritius",
+        "place": "Mauritius",
+        "duration": "7D · 6N",
+        "price": "₹ 20,000",
+        "logo": "https://cdn1.tripoto.com/media/filter/mss/img/411197/UserPhoto/1552395968_oyo.jpg",
+        "logo_text": "OYO Total Holidays"
+    },
+    {
+        "image": "https://cdn1.tripoto.com/media/filter/tst/img/319486/Image/1585040093_package_flights_not_included_2x.png",
+        "description": "Premium Pool Villa Special",
+        "place": "Bali",
+        "duration": "6D · 5N",
+        "price": "₹ 23,454",
+        "logo": "https://cdn1.tripoto.com/media/filter/mss/img/411197/UserPhoto/1552395968_oyo.jpg",
+        "logo_text": "OYO Total Holidays"
+    },
+    {
+        "image": "https://cdn1.tripoto.com/media/filter/tst/img/319486/Image/1585040033_package_flights_included_2x.png",
+        "description": "Honeymoon on Beaches and Desert.",
+        "place": "Mauritius",
+        "duration": "9D · 8N",
+        "price": "₹ 88,999",
+        "logo": "https://cdn1.tripoto.com/media/filter/mss/img/1586489/UserPhoto/1559222611_logo.jpg",
+        "logo_text": "iFly Vacations pvt ltd"
+    },
+    {
+        "image": "https://cdn1.tripoto.com/media/filter/tst/img/319486/Image/1585040093_package_flights_not_included_2x.png",
+        "description": "Exotic Maldives",
+        "place": "Maldives",
+        "duration": "4D · 3N",
+        "price": "₹ 22,000",
+        "logo": "https://cdn1.tripoto.com/media/filter/mss/img/1334305/UserPhoto/1557748206_untitled.png",
+        "logo_text": "Explore More Holidays"
+    },
+    {
+        "image": "https://cdn1.tripoto.com/media/filter/tst/img/319486/Image/1585040033_package_flights_included_2x.png",
+        "description": "4 Days Holiday in Maldives",
+        "place": "Maldives",
+        "duration": "4D · 3N",
+        "price": "₹ 48,000",
+        "logo": "https://cdn1.tripoto.com/media/filter/mss/img/1545356/UserPhoto/1556986378_sfm_logo.jpg",
+        "logo_text": "SFM Travels"
+    },
+    {
+        "image": "https://cdn1.tripoto.com/media/filter/tst/img/319486/Image/1585040093_package_flights_not_included_2x.png",
+        "description": "Magical Mauritius",
+        "place": "Mauritius",
+        "duration": "7D · 6N",
+        "price": "₹ 25,000",
+        "logo": "https://cdn1.tripoto.com/media/filter/mss/img/1467829/UserPhoto/1568839915_tui_logo.jpg",
+        "logo_text": "TUI India"
+    },
+    {
+        "image": "https://cdn1.tripoto.com/media/filter/tst/img/1358540/Image/1557826267_mallu.jpg",
+        "description": "Explore Maldives",
+        "place": "Maldives",
+        "duration": "4D · 3N",
+        "price": "₹ 28,500",
+        "logo": "https://cdn1.tripoto.com/media/filter/mss/img/1550627/UserPhoto/1557303075_0.png",
+        "logo_text": "Destynasia Ventures"
+    }
+]
+
+
 let properties = [
     {
         img: "https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1637909845_photo_1471922694854_ff1b63b20054.jpeg",
