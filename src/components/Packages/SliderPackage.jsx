@@ -41,17 +41,17 @@ let rating = (Math.random() * 5).toFixed(1);
 let duration = JSON.parse(localStorage.getItem("bookingAmount"))?.duration;
 let durationValue = "";
 for (let i = 0; i < duration?.length; i++) {
-  if (duration[i] == "D") {
+  if (duration[i] === "D") {
     durationValue += " " + "Days";
   }
-  if (duration[i] == "N") {
+  if (duration[i] === "N") {
     durationValue += " " + "Nights";
   } else {
     durationValue += duration[i];
   }
 }
 console.log("durationValue", durationValue);
-export default function SliderPackages() {
+  function SliderPackages() {
   return (
     <>
       <Swiper
@@ -64,31 +64,31 @@ export default function SliderPackages() {
         className="mySwiper"
       >
         <SwiperSlide w="100%" h="350px">
-          <Box padding="0 40px 40px 40px ">
-            <Image src="https://cdn1.tripoto.com/media/filter/nxxl/img/1789711/Image/1642601942_lead_form_final_1.png" />
+          <Box padding="0 40px 40px 40px" objectFit="cover">
+            <Image  src="https://cdn1.tripoto.com/media/filter/nxxl/img/1789711/Image/1642601942_lead_form_final_1.png" />
           </Box>
         </SwiperSlide>
-        <SwiperSlide w="100%" h="400px">
+        <SwiperSlide w="100%" h="350px">
           <Box padding="0 40px 40px">
             <Image src="https://cdn1.tripoto.com/media/filter/nxxl/img/1789711/Image/1642502177_11.jpeg" />
           </Box>
         </SwiperSlide>
-        <SwiperSlide w="100%" h="400px">
+        <SwiperSlide w="100%" h="350px">
           <Box padding="0 40px 40px">
             <Image src="https://cdn1.tripoto.com/media/filter/nxxl/img/1789711/Image/1642502197_330263448.jpeg" />
           </Box>
         </SwiperSlide>
-        <SwiperSlide w="100%" h="400px">
+        <SwiperSlide w="100%" h="350px">
           <Box padding="0 40px 40px">
             <Image src="https://cdn1.tripoto.com/media/filter/nxxl/img/1789711/Image/1642502216_286286477.jpeg" />
           </Box>
         </SwiperSlide>
-        <SwiperSlide w="100%" h="400px">
+        <SwiperSlide w="100%" h="350px">
           <Box padding="0 40px 40px">
             <Image src="https://cdn1.tripoto.com/media/filter/nxxl/img/1789711/Image/1642502238_5.jpeg" />
           </Box>
         </SwiperSlide>
-        <SwiperSlide w="100%" h="400px">
+        <SwiperSlide w="100%" h="350px">
           <Box padding="0 40px 40px">
             <Image src="https://cdn1.tripoto.com/media/filter/nxxl/img/1789711/Image/1642502257_3.jpeg" />
           </Box>
@@ -97,23 +97,23 @@ export default function SliderPackages() {
         <SwiperSlide>
           <Image src="https://cdn1.tripoto.com/media/filter/nxxl/img/1789711/Image/1642502324_photo_1605720444820_30c8f2a4460c.jpeg" />
         </SwiperSlide>
-        <SwiperSlide w="100%" h="400px">
+        <SwiperSlide w="100%" h="350px">
           <Image src="https://cdn1.tripoto.com/media/filter/nxxl/img/1789711/Image/1642502382_istockphoto_1333134892_170667a.jpeg" />
         </SwiperSlide>
-        <SwiperSlide w="100%" h="400px">
+        <SwiperSlide w="100%" h="350px">
           <Image src="https://cdn1.tripoto.com/media/filter/nxxl/img/1789711/Image/1642502465_photo_1540099741100_f2842527d744.jpeg" />
         </SwiperSlide>
 
-        <SwiperSlide w="100%" h="400px">
+        <SwiperSlide w="100%" h="350px">
           <Image src="https://cdn1.tripoto.com/media/filter/nxxl/img/1789711/Image/1642502091_286778639.jpeg" />
         </SwiperSlide>
-        <SwiperSlide w="100%" h="400px">
+        <SwiperSlide w="100%" h="350px">
           <Image src="https://cdn1.tripoto.com/media/filter/nxxl/img/1789711/Image/1642502485_18.jpeg" />
         </SwiperSlide>
-        <SwiperSlide w="100%" h="400px">
+        <SwiperSlide w="100%" h="350px">
           <Image src="https://cdn1.tripoto.com/media/filter/nxxl/img/1789711/Image/1642502678_img_5037.jpg" />
         </SwiperSlide>
-        <SwiperSlide w="100%" h="400px">
+        <SwiperSlide w="100%" h="350px">
           <Image src="https://cdn1.tripoto.com/media/filter/nxxl/img/1789711/Image/1642502496_283268477.jpeg" />
         </SwiperSlide>
       </Swiper>
@@ -303,3 +303,5 @@ export default function SliderPackages() {
     </>
   );
 }
+
+export default SliderPackages
