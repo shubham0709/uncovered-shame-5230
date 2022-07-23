@@ -53,7 +53,7 @@ const Singapore = () => {
 
   return (
     <Box>
-      <Box mt="20px">
+      <Box>
         <iframe
           width="100%"
           height="380"
