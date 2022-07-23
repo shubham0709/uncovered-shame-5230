@@ -1,6 +1,6 @@
 .main-container {
   width: 98%;
-  height: 2850px;
+  height: 2800px;
   padding: 3px 80px;
   margin: auto;
   font-family: circularairpro-bold, Helvetica, -apple-system, Arial, sans-serif;
@@ -8,7 +8,7 @@
   word-spacing: 0px;
 }
 .top-cont {
-    margin-top: 25px;
+    margin-top: 10px;
   height: 100px;
   width: 100%;
 }
@@ -26,7 +26,7 @@
 }
 .beach-head {
   font-size: 28px;
-  margin: 40px 0 15px 0;
+  margin: 20px 0 15px 0;
 
 }
 .top-beach-cont {

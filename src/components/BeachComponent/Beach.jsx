@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Box } from "@chakra-ui/react";
 import "../BeachComponent/beach.css";
 import {ImageCard} from "./ImageCard";
@@ -8,9 +8,13 @@ import AdvancedSlider from "../UsableSliders/AdvancedSlider";
 import DetailsSlider from "../UsableSliders/DetailsSlider";
 const Beach = () => {
 console.log("moreDetail",moreDetail);
-
+useEffect(() => {
+  window.scroll(0, 0);
+}, []);
   return (
-    <div className="main-container">
+  <>
+   <Box h="69px" backgroundColor="#2F9BDB" position=""></Box>
+      <div className="main-container">
       <div className="top-cont">
         <h1 className="beach">Beaches</h1>
         <p className="beach para">
@@ -47,6 +51,7 @@ console.log("moreDetail",moreDetail);
      <BasicSlider arr={vlogs || []}  />
      </Box>
     </div>
+  </>
   );
 };
 
