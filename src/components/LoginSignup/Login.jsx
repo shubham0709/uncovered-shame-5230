@@ -25,14 +25,21 @@ import { getDatafromLocalStorage } from "../../utils/localstorage";
 import { useDispatch, useSelector } from "react-redux";
 import { loginAPI } from "../../Redux/AuthReducer/action";
 import SignupModal from "./Signup";
+import { useNavigate } from "react-router-dom";
 
 const LoginModal = ({ isOpen, onOpen, onClose }) => {
   // const { isOpen, onOpen, onClose } = useDisclosure();
+  const navigate = useNavigate();
   const dispatch = useDispatch();
+  const [loggedIn, setLoggedIn] = useState(false);
+  const isAuth = useSelector((state) => state.AuthReducer.isAuth);
+
+  console.log(isAuth, " is auth");
   const [creds, setCreds] = useState({
     email: "",
     password: "",
   });
+
   const changeHandler = (e) => {
     let { name, value } = e.target;
     setCreds({
@@ -42,13 +49,16 @@ const LoginModal = ({ isOpen, onOpen, onClose }) => {
   };
 
   const loginHandler = () => {
-    dispatch(loginAPI(creds));
+    let x = dispatch(loginAPI(creds));
+    setLoggedIn(x);
+    onClose();
+    navigate("/");
   };
 
   return (
     <>
       <Text cursor="pointer" onClick={onOpen}>
-        Login
+        {loggedIn ? "Logged In" : "Sign In"}
       </Text>
 
       <Modal isOpen={isOpen} onClose={onClose}>
@@ -77,12 +87,14 @@ const LoginModal = ({ isOpen, onOpen, onClose }) => {
               </Button>
               <Text>OR</Text>
               <Input
+                required
                 w="90%"
                 name="email"
                 placeholder="EMAIL"
                 onChange={changeHandler}
               />
               <Input
+                required
                 w="90%"
                 name="password"
                 placeholder="PASSWORD"

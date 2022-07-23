@@ -22,19 +22,18 @@ export const registerAPI = (creds) => (dispatch) => {
 }
 
 export const loginAPI = (creds) => (dispatch) => {
+    let flag = false;
     dispatch({ type: LOGIN_REQUEST })
     let users = getDatafromLocalStorage("registeredUsers") || [];
-    let flag = false;
     users.forEach((x) => {
         if (x.email == creds.email && x.password == creds.password) {
-            dispatch({ type: LOGIN_SUCCESS });
+            alert("Logged In successfully");
             flag = true;
+            dispatch({ type: LOGIN_SUCCESS });
         }
     });
-    if (flag == false) {
-        dispatch({ type: LOGIN_FAILURE })
-    }
-    console.log(flag ? "login successfull" : "invalid credentials");
+    dispatch({ type: LOGIN_FAILURE })
+    return flag;
 }
 
 export const logoutAPI = () => (dispatch) => {
