@@ -13,6 +13,9 @@ import ErrorPage from "../pages/ErrorPage";
 import Processing from "../pages/Processing";
 import SuccessfulBooking from "../pages/SuccessfulBooking"
 
+import Beach from "./BeachComponent/Beach";
+
+
 
 const MainRoutes = () => {
   return (
@@ -29,6 +32,8 @@ const MainRoutes = () => {
       <Route path="/successfulBooking" element={<SuccessfulBooking />} />
 
       <Route path="/*" element={<ErrorPage />} />
+      <Route path="/beach" element={<Beach />} />
+
     </Routes>
   );
 };
