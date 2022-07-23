@@ -20,23 +20,26 @@ import {
     EditablePreview,
     // useEditableControls
   } from '@chakra-ui/react'
-  import { CheckIcon,CloseIcon,EditIcon,ChevronRightIcon } from '@chakra-ui/icons'
+  import { CheckIcon,CloseIcon,EditIcon,ChevronRightIcon, ArrowForwardIcon } from '@chakra-ui/icons'
   import styles from "../../Styles/Payment.module.css"
   import React from 'react'
   import { useDisclosure } from '@chakra-ui/react'
 import { WarningIcon } from '@chakra-ui/icons'
+import { PaymentCredential } from './Paymentcredential'
 
-export function ScrollingExample() {
+export function ScrollingExample({amount,email,contact}) {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const scrollBehavior ='inside'
+   
   
-    const mobile=7651991563
+    // const mobile=7651991563
     const btnRef = React.useRef(null)
     return (
-      <>
-        <div style={{backgroundColor:"#2f9bdb",height:"69px"}}></div>
-        <Button mt={3} ref={btnRef} onClick={onOpen}>
-          Trigger modal
+      <div style={{backgroundColor:""}}>
+        {/* <div style={{backgroundColor:"#2f9bdb",height:"69px"}}></div> */}
+        <Button style={{backgroundColor:"#2f9bdb",color:"white",position:"relative",top:"-10px"}} mt={3} ref={btnRef} onClick={onOpen} >
+        {`Proceed to pay ${amount}`}
+        <ArrowForwardIcon color="white"  fontSize="3xl" margin="5px 0px 0px 100px" padding="5px" />
         </Button>
   
         <Modal
@@ -53,7 +56,7 @@ export function ScrollingExample() {
                     <div className={styles.innerheaderWrapper}>
                         <p className={styles.head}> Your upcoming Trip</p>
                         <p>This payment is for Tripoto's Mindfull Retreats</p>
-                        <p className={styles.PaymentAmount}> $500 </p>
+                        <p className={styles.PaymentAmount}> {amount} </p>
                     </div>
 
                     <div className={styles.languagebar}>
@@ -72,11 +75,11 @@ export function ScrollingExample() {
                 </div>
                 <div className={styles.mobilenumCont}>
                     <div>
-                         <CustomControlsExample number={mobile ? mobile : "7651991563"} />
+                         <CustomControlsExample number={contact ? contact : 8874834315} />
                     </div>
                     <div style={{width:"2px",marginTop:"9px",height:"12px",backgroundColor:"grey"}}></div>
                     <div>
-                        {/* emeil iD */}rg15697@gmail.com
+                        {/* emeil iD */}{email}
                     </div>
                 </div>
                 <div styles={{height:"300px"}}></div>
@@ -105,7 +108,9 @@ export function ScrollingExample() {
                         <div>UPI-PhonePe</div>
                     </div>
                     <div>
-                        <ChevronRightIcon />
+                    <div style={{display:"flex"}}>    
+                         <PaymentCredential contact={contact} amount={amount} />
+                         <ChevronRightIcon /></div>
                     </div>
                 </div>
               </div>
@@ -137,7 +142,7 @@ export function ScrollingExample() {
                         <div><img style={{height:"25px",width:"25px"}} src="https://e7.pngegg.com/pngimages/795/596/png-clipart-logo-line-angle-brand-line-angle-triangle.png" alt="" /></div>
                    
                         <div>
-                             <div>UPI-PhonePe</div>
+                             <div>UPI/QR</div>
                              <p>Google-Pay, Phonepe paytm & mare</p>
                         </div>
                     </div>
@@ -195,7 +200,7 @@ export function ScrollingExample() {
             </ModalFooter>
           </ModalContent>
         </Modal>
-      </>
+      </div>
     )
   }
 

@@ -45,9 +45,12 @@
 
 .PaymentMethod{
     width:95%;
-     margin: auto;
+    margin: auto;
     margin-top: 15px;
-    border: solid red 2px;
+    /* border: solid red 2px; */
+}
+.PaymentMethod>div>div{
+    cursor: pointer;
 }
 .paymentHead{
     color:#9f9797;
