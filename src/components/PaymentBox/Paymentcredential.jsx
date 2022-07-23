@@ -90,7 +90,6 @@ export function PaymentCredential({contact,amount}) {
                 </div>
                 <div styles={{height:"300px"}}></div>
             </div>
-            {/* <ModalHeader>Modal Title</ModalHeader> */}
             <ModalCloseButton color="white"/>
             <ModalBody>
 
@@ -143,7 +142,7 @@ export function PaymentCredential({contact,amount}) {
             </ModalBody>
             <ModalFooter>
             <button
-            onClick={()=>navigate("/otpPage")}
+            onClick={()=>navigate("/processing")}
            style={{
             width:"100%",
             height:"30px",
