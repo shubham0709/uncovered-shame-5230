@@ -14,7 +14,7 @@ export const CardBasic = ({ elem }) => {
       being
       Rendered="circularairpro-bold 100.0%"
       textAlign={"left"}
-      h="300px"
+      h="320px"
       w="330px"
       cursor={"pointer"}
     >
