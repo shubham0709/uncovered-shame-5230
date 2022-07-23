@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Image, Text } from "@chakra-ui/react";
 
-export const Card1 = ({ elem }) => {
+export const CardDetail = ({ elem }) => {
   return (
     <Box
       adding={"12px"}
@@ -15,32 +15,25 @@ export const Card1 = ({ elem }) => {
       backgroundColor="RGBA(0, 0, 0, 0)"
       Rendered="circularairpro-bold 100.0%"
       textAlign={"left"}
-      h="320px"
-      w="330px"
+      h="270px"
+      w="350px"
       cursor={"pointer"}
     >
-      <Box h="54%">
+      <Box h="85%">
         {" "}
         <Image w="100%" h="50%" src={elem?.image || ""} borderRadius={"5px"} />
       </Box>
 
-      <Box h="46%">
-        <Text
-          fontSize="15"
-          color={"rgb(255,115,69)"}
-          margin="5px 0"
-          fontWeight="550"
-        >
-          {elem?.title}
-        </Text>
+      <Box h="15%">
         <Text
           fontSize="18"
           fontWeight="550"
+          marginTop={"10px"}
           textTransform="capitalize"
           Rendered="circularairpro-bold"
           color={"gray.800"}
         >
-          {elem?.description || ""}
+          {elem?.place || ""}
         </Text>
       </Box>
     </Box>

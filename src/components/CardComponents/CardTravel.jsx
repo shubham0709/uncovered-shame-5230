@@ -102,15 +102,15 @@ export const CardTravel = ({ elem }) => {
                 <Text margin="0 5px 0 0" fontSize={"18px"}>
                   {elem?.price || 2000}
                 </Text>
-                <Text fontSize={"15px"} color="gray.400">
+                <Text fontSize={"12px"} color="gray.400">
                   onwards
                 </Text>
               </Flex>
             </Box>
-            <Box spacing={5}>
+            <Box spacing={3}>
               <Tag
                 size={"xl"}
-                px={4}
+                px={3}
                 h={8}
                 variant="teal"
                 border={"1px solid teal"}
