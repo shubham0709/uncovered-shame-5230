@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -17,41 +17,38 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { OverviewPackage } from "./OverviewPackage";
-// get data of location
-let place = JSON.parse(localStorage.getItem("bookingAmount"))?.place || "";
-// get data of number
-let priceStr = JSON.parse(localStorage.getItem("bookingAmount"))?.price || 0;
-let arr = ["1", "2", "3", "4", "5", "6", "7", "9", "0"];
-let ans = "";
-for (let i = 0; i < priceStr.length; i++) {
-  if (arr.indexOf(priceStr[i]) !== -1) {
-    ans += priceStr[i];
-  }
-}
 
-let price = Number(ans) || 10000;
-price = Number(price);
-
-// get Data of description
-let description = JSON.parse(
-  localStorage.getItem("bookingAmount")
-)?.description;
-let rating = (Math.random() * 5).toFixed(1);
-
-let duration = JSON.parse(localStorage.getItem("bookingAmount"))?.duration;
-let durationValue = "";
-for (let i = 0; i < duration?.length; i++) {
-  if (duration[i] === "D") {
-    durationValue += " " + "Days";
+function SliderPackages() {
+  let place = JSON.parse(localStorage.getItem("bookingAmount"))?.place || "";
+  let priceStr = JSON.parse(localStorage.getItem("bookingAmount"))?.price || 0;
+  let arr = ["1", "2", "3", "4", "5", "6", "7", "9", "0"];
+  let ans = "";
+  for (let i = 0; i < priceStr.length; i++) {
+    if (arr.indexOf(priceStr[i]) !== -1) {
+      ans += priceStr[i];
+    }
   }
-  if (duration[i] === "N") {
-    durationValue += " " + "Nights";
-  } else {
-    durationValue += duration[i];
+
+  let price = Number(ans) || 10000;
+  price = Number(price);
+  let description = JSON.parse(
+    localStorage.getItem("bookingAmount")
+  )?.description;
+  let rating = (Math.random() * 5).toFixed(1);
+
+  let duration = JSON.parse(localStorage.getItem("bookingAmount"))?.duration;
+  let durationValue = "";
+  for (let i = 0; i < duration?.length; i++) {
+    if (duration[i] === "D") {
+      durationValue += " " + "Days";
+    }
+    if (duration[i] === "N") {
+      durationValue += " " + "Nights";
+    } else {
+      durationValue += duration[i];
+    }
   }
-}
-console.log("durationValue", durationValue);
-  function SliderPackages() {
+
   return (
     <>
       <Swiper
@@ -65,7 +62,7 @@ console.log("durationValue", durationValue);
       >
         <SwiperSlide w="100%" h="350px">
           <Box padding="0 40px 40px 40px" objectFit="cover">
-            <Image  src="https://cdn1.tripoto.com/media/filter/nxxl/img/1789711/Image/1642601942_lead_form_final_1.png" />
+            <Image src="https://cdn1.tripoto.com/media/filter/nxxl/img/1789711/Image/1642601942_lead_form_final_1.png" />
           </Box>
         </SwiperSlide>
         <SwiperSlide w="100%" h="350px">
@@ -304,4 +301,4 @@ console.log("durationValue", durationValue);
   );
 }
 
-export default SliderPackages
+export default SliderPackages;
