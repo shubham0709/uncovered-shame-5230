@@ -9,7 +9,7 @@ import LoginModal from "../LoginSignup/Login";
 const Inspirations = [
   { to: "/collections/dubai", title: "Visit Dubai" },
   { to: "/collections/singapore", title: "Visit Singapore" },
-  { to: "#", title: "Beaches" },
+  { to: "/beach", title: "Beaches" },
   { to: "#", title: "Mountains" },
   { to: "#", title: "Heritage" },
   { to: "#", title: "Weekend Guide" },
