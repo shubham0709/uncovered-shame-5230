@@ -11,10 +11,12 @@ import {
   Image,
   Text,
   Box,
+  Radio, RadioGroup 
 } from "@chakra-ui/react";
 import { saveDataToLocalStorage } from "../../utils/localstorage";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+
 
 export default function CustoemrDetailForm() {
   const navigate = useNavigate();
@@ -24,7 +26,8 @@ export default function CustoemrDetailForm() {
   const [contact, setContact] = useState("");
   const [departureCity, setDepartureCity] = useState("");
   const [date, setDate] = useState("");
-  const [typeOfRoom, setTypeOfRoom] = useState("");
+//   const [typeOfRoom, setTypeOfRoom] = useState("");
+  const [value,setValue] = React.useState("")
   let priceStr = JSON.parse(localStorage.getItem("bookingAmount")).price;
   let arr = ["1", "2", "3", "4", "5", "6", "7", "9", "0"];
   let ans = "";
@@ -45,7 +48,7 @@ export default function CustoemrDetailForm() {
       contact: contact,
       departureCity: departureCity,
       date: date,
-      typeOfRoom: typeOfRoom,
+      typeOfRoom: value,
     };
     saveDataToLocalStorage("userDetails", userDetails);
     navigate("/proceedToPaymentPage");
@@ -133,14 +136,23 @@ export default function CustoemrDetailForm() {
                     type="date"
                   />
                 </FormControl>
+
                 <FormControl id="bedRoomOccupancy">
-                  <Text>Type Of room</Text>
-                  <Input value={"twin"} type="radio" />
+                <Text fontSize="16px" fontWeight="600" paddingBottom={15}>Type Of room</Text>
+                <RadioGroup onChange={setValue} value={value} >
+                   <Stack direction='column'>
+                      <Radio value='deluxe room on twin sharing'>deluxe room on twin sharing</Radio>
+                      <Radio value='log hut cabins on triple sharing'>log hut cabins on triple sharing</Radio>
+                   </Stack>
+                </RadioGroup>
+                 
                 </FormControl>
+
                 <FormControl id="whatsAppUpdate">
-                  <Input type="checkBox" />
-                  <Text>Send me updates for this booking on WhatsApp</Text>
-                  <Text>Type Of room</Text>
+                   <Flex gap="7px">
+                       <Checkbox />
+                       <Text>Send me updates for this booking on WhatsApp</Text>
+                    </Flex>
                 </FormControl>
                 <Box>
                   <Flex>
