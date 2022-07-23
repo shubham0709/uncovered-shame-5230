@@ -1,0 +1,59 @@
+.SuccessfulBookingPageWrapper{
+    height: 100vh;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+}
+.GreenBar{
+    height:40px;
+    width:95%;
+    background-color: green;
+    margin: auto;
+    margin-top:53px
+}
+.SuccessHead{
+    color: orangered;;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 0px;
+    border: 1px solid #dddddd;
+    margin-top: 20px;
+}
+.centerText{
+   text-align: center;
+}
+.image{
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    margin-top: 40px;
+}
+.Thans{
+    color: #2bb673;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 40px;
+}
+.simpleText{
+    font-weight: 400;
+    font-size: 13px;
+    margin: 8px;
+}
+.lastdiv{
+    margin-top: 10px;
+
+}
+.timer{
+    color: #878383;
+}
+.LastButton{
+    margin-top: 15px;
+    height: 30px;
+    width: 200px;
+    background-color: orangered;
+    color: white;
+    font-weight: 600;
+}

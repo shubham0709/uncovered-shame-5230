@@ -1,55 +1,64 @@
-.main-container{
-    width: 1046px;
-    height: 2000px;
-    margin: auto;
-    border: 1px solid red;
+.main-container {
+  width: 98%;
+  height: 2800px;
+  padding: 3px 80px;
+  margin: auto;
+  font-family: circularairpro-bold, Helvetica, -apple-system, Arial, sans-serif;
+  vertical-align: baseline;
+  word-spacing: 0px;
 }
-.top-cont{
-    height: 130px;
-    width: 100%;
+.top-cont {
+    margin-top: 10px;
+  height: 100px;
+  width: 100%;
 }
-.beach{
-    font-size: 36px;
-    font-weight: 600;
-    color: #333333;
-    text-align: left;
-    padding: 5px 20px;
+.beach {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333333;
+  text-align: left;
+
 }
-.para{
-    font-size: 16px;
-    font-weight: 400;
+.para {
+  font-size: 16px;
+  font-weight: 400;
+
 }
-.beach-head{
-    font-size: 28px;
+.beach-head {
+  font-size: 28px;
+  margin: 20px 0 15px 0;
+
 }
-.top-beach-cont{
-    height: auto;
-    width: 98%;
-    margin:10px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr);
-    grid-gap: 20px;
+.top-beach-cont {
+
+  height: auto;
+  width: 98%;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 20px;
 }
-.top-beach-cont div{
-    height: 295px;
-    width: 99%;
-    margin: auto;
+.top-beach-cont div {
+
+  height: 300px;
+  width: 99%;
+  margin: auto;
 }
-.top-img{
-    height: 200px;
-    width: 99%;
-    border-radius: 6px;
-    cursor: pointer;
+.top-img {
+  height: 220px;
+  width: 99%;
+  border-radius: 6px;
+  cursor: pointer;
 }
-.card-text{
-    font-size: 18px;
-    padding: 10px 0px;
+.card-text {
+  font-size: 18px;
+  padding: 10px 0px;
 }
-.author-text{
-    color: blue;
-    text-align: left;
+.author-text {
+  color: #55ade1;
+  text-align: left;
 }
-span{
-    display: flex;
+span {
+  display: flex;
 }

@@ -10,7 +10,15 @@ import ProceedToPaymentPage from "../pages/ProceedToPaymentPage";
 import LoginModal from "./LoginSignup/Login";
 import SignupModal from "./LoginSignup/Signup";
 import ErrorPage from "../pages/ErrorPage";
+
 import Forum from "../components/Forum/Forum";
+
+import Processing from "../pages/Processing";
+import SuccessfulBooking from "../pages/SuccessfulBooking"
+
+import Beach from "./BeachComponent/Beach";
+
+
 
 const MainRoutes = () => {
   return (
@@ -23,8 +31,15 @@ const MainRoutes = () => {
       <Route path="/proceedToPaymentPage" element={<ProceedToPaymentPage />} />
       <Route path="/login" element={<LoginModal />} />
       <Route path="/signup" element={<SignupModal />} />
+
       <Route path="/forum" element={<Forum />} />
+
+      <Route path="/processing" element={<Processing />} />
+      <Route path="/successfulBooking" element={<SuccessfulBooking />} />
+
       <Route path="/*" element={<ErrorPage />} />
+      <Route path="/beach" element={<Beach />} />
+
     </Routes>
   );
 };

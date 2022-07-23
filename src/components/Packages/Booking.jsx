@@ -9,7 +9,7 @@ export const Booking = () => {
   return (
     <div>
       <Box h="69px" backgroundColor="#2F9BDB" position=""></Box>
-      <Box margin={" 80px 20px 0 50px"} textAlign="left" h="2750px">
+      <Box margin={" 20px 20px 0 50px"} textAlign="left" h="2750px">
         <Flex margin={"0 70px"} fontWeight="400">
           <Text color="blue.400"> Tour Packages : </Text>
           <Text fontSize={"15px"}>

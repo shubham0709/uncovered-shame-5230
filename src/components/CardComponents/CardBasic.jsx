@@ -4,7 +4,6 @@ import { Box, Image, Text, HStack, Flex } from "@chakra-ui/react";
 export const CardBasic = ({ elem }) => {
   return (
     <Box
-    // border="1px solid red"
       adding={"12px"}
       fontFamily="circularairpro-bold, Helvetica, -apple-system,Arial, sans-serif"
       lineHeight="27.7143px"
@@ -15,11 +14,10 @@ export const CardBasic = ({ elem }) => {
       being
       Rendered="circularairpro-bold 100.0%"
       textAlign={"left"}
-      h="300px"
+      h="320px"
       w="330px"
       cursor={"pointer"}
     >
-      {/* <Text>Travel and Learn with Tripoto's Mindful Retreats</Text> */}
       <Box h="54%">
         {" "}
         <Image w="100%" h="50%" src={elem?.image || ""} borderRadius={"5px"} />
