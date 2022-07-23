@@ -1,4 +1,5 @@
 import { reducer as DataReducer } from "./DataReducer/reducer";
+import { AuthReducer } from "./AuthReducer/reducer";
 import thunk from 'redux-thunk';
 import {
     combineReducers,
@@ -6,8 +7,8 @@ import {
     applyMiddleware
 } from "redux";
 const rootReducer = combineReducers({
-    DataReducer: DataReducer
-
+    DataReducer: DataReducer,
+    AuthReducer: AuthReducer
 })
 
 export const store = legacy_createStore(rootReducer, applyMiddleware(thunk));

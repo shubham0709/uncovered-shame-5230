@@ -18,9 +18,9 @@ import {
 } from "@chakra-ui/react";
 import { OverviewPackage } from "./OverviewPackage";
 // get data of location
-let place = JSON.parse(localStorage.getItem("bookingAmount")).place;
+let place = JSON.parse(localStorage.getItem("bookingAmount"))?.place || "";
 // get data of number
-let priceStr = JSON.parse(localStorage.getItem("bookingAmount")).price;
+let priceStr = JSON.parse(localStorage.getItem("bookingAmount"))?.price || 0;
 let arr = ["1", "2", "3", "4", "5", "6", "7", "9", "0"];
 let ans = "";
 for (let i = 0; i < priceStr.length; i++) {
@@ -33,12 +33,14 @@ let price = Number(ans) || 10000;
 price = Number(price);
 
 // get Data of description
-let description = JSON.parse(localStorage.getItem("bookingAmount")).description;
+let description = JSON.parse(
+  localStorage.getItem("bookingAmount")
+)?.description;
 let rating = (Math.random() * 5).toFixed(1);
 
-let duration = JSON.parse(localStorage.getItem("bookingAmount")).duration;
+let duration = JSON.parse(localStorage.getItem("bookingAmount"))?.duration;
 let durationValue = "";
-for (let i = 0; i < duration.length; i++) {
+for (let i = 0; i < duration?.length; i++) {
   if (duration[i] === "D") {
     durationValue += " " + "Days";
   }
@@ -49,7 +51,7 @@ for (let i = 0; i < duration.length; i++) {
   }
 }
 console.log("durationValue", durationValue);
-export default function SliderPackages() {
+  function SliderPackages() {
   return (
     <>
       <Swiper
@@ -206,7 +208,13 @@ export default function SliderPackages() {
           <Text fontWeight="300">Location</Text>
           <Text fontWeight="600">{place}</Text>
           <Text fontWeight="300">Highlights</Text>
-          <Grid fontSize={"15px"} fontWeight="600" templateColumns="repeat(6, 1fr)" gap={3} margin="10px 0">
+          <Grid
+            fontSize={"15px"}
+            fontWeight="600"
+            templateColumns="repeat(6, 1fr)"
+            gap={3}
+            margin="10px 0"
+          >
             <Flex>
               <Image
                 w="30px"
@@ -281,10 +289,12 @@ export default function SliderPackages() {
               <Text>Activities Included</Text>
             </Flex>
             <Flex>
-              <Image  w="30px"
+              <Image
+                w="30px"
                 h="20px"
-                 src="https://cdn1.tripoto.com/media/filter/tst/img/16404/Image/1649655227_icons8_wi_fi_40.png" />
-              <Text >Wi-Fi</Text>
+                src="https://cdn1.tripoto.com/media/filter/tst/img/16404/Image/1649655227_icons8_wi_fi_40.png"
+              />
+              <Text>Wi-Fi</Text>
             </Flex>
           </Grid>
         </Box>
@@ -293,3 +303,5 @@ export default function SliderPackages() {
     </>
   );
 }
+
+export default SliderPackages

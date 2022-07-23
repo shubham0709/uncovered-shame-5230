@@ -33,11 +33,12 @@ const Navbar = () => {
   const dispatch = useDispatch();
   const data = useSelector((state) => state.AppReducer);
 
-  // const getData= () =>{
-  //     setTimeout(()=>{
-  //        dispatch(getDataRelatedToSearch(query))
-  //     },3000)
-  // }
+  const openLoginModal = () => {};
+  const openSignUpModal = () => {};
+
+  const handleSignIn = () => {
+    console.log("handling sign in");
+  };
 
   var myScrollFunc = function () {
     var y = window.scrollY;
@@ -113,7 +114,9 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
-            <div className={styles.Linktab}>Sign in</div>
+            <div className={styles.Linktab} onClick={() => handleSignIn()}>
+              Sign in
+            </div>
           </div>
         </div>
 
