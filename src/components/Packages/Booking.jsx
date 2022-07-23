@@ -1,11 +1,11 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { Box, Text, Flex } from "@chakra-ui/react";
 import SliderPackages from "./SliderPackage";
 import CustoemrDetailForm from "../CustomerDetailsProceedToBook/CustomerDetailsForm";
 export const Booking = () => {
-  useEffect(()=>{
-    // window.location.reload()
-  },[])
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
   return (
     <div>
       <Box h="69px" backgroundColor="#2F9BDB" position=""></Box>

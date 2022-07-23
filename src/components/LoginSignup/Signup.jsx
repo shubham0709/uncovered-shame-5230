@@ -46,13 +46,14 @@ const SignupModal = () => {
 
   const signupHandler = () => {
     dispatch(registerAPI(creds));
+    onClose();
   };
 
   return (
     <>
-      <Button mt="200px" onClick={onOpen}>
+      <Text color="blue" cursor="pointer" onClick={onOpen}>
         Sign Up
-      </Button>
+      </Text>
 
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />

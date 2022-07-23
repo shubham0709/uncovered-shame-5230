@@ -50,15 +50,19 @@
 .detailsrowwrapper{
     display: flex;
     gap:20%;
-    /* border:solid red 2px; */
+    justify-content: space-between;
     margin-top: 30px;
 }
 
 
 .detailscolWrapper{
     display: flex;
+    justify-content: space-around;
     flex-direction: column;
     padding-top: 3px;
+}
+.detailsrowwrapper>div{
+    width: 48%;
 }
 .title{
     color: grey;
@@ -151,6 +155,7 @@
     font-size: 18px;
     font-weight: 600;
     margin-left: 20px;
+    background-color: "";
 }
 /* =====================package page footer================ */
 

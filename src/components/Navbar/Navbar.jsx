@@ -2,12 +2,13 @@ import React from "react";
 import styles from "../../Styles/Navbar.module.css";
 import { TriangleDownIcon, Search2Icon } from "@chakra-ui/icons";
 import { Link } from "react-router-dom";
-import { Input } from "@chakra-ui/react";
+import { Box, Input, useDisclosure } from "@chakra-ui/react";
 import { useDispatch, useSelector } from "react-redux";
+import LoginModal from "../LoginSignup/Login";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Inspirations = [
-  { to: "#", title: "Visit Dubai" },
-  { to: "#", title: "Visit Singapore" },
+  { to: "/collections/dubai", title: "Visit Dubai" },
+  { to: "/collections/singapore", title: "Visit Singapore" },
   { to: "#", title: "Beaches" },
   { to: "#", title: "Mountains" },
   { to: "#", title: "Heritage" },
@@ -27,18 +28,19 @@ const PublishTrip = [
   { to: "#", title: "Import Blog" },
 ];
 const Navbar = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
   const [value, setValue] = React.useState(false);
   const [query, setQuery] = React.useState("");
 
   const dispatch = useDispatch();
   const data = useSelector((state) => state.AppReducer);
 
-  const openLoginModal = () => {};
-  const openSignUpModal = () => {};
+  // const openLoginModal = () => {};
+  // const openSignUpModal = () => {};
 
-  const handleSignIn = () => {
-    console.log("handling sign in");
-  };
+  // const handleSignIn = () => {
+  //   console.log("handling sign in");
+  // };
 
   var myScrollFunc = function () {
     var y = window.scrollY;
@@ -52,13 +54,13 @@ const Navbar = () => {
         style={value ? { backgroundColor: "#2f9bdb" } : { backgroundColor: "" }}
       >
         <div className={styles.LogoWrapper}>
-          <div>
+          <Link to="/">
             <img
               className={styles.LogoImage}
               src="https://cdn1.tripoto.com/assets/2.9/img/logo/tripoto.svg"
               alt="Tripoto Logo"
             />
-          </div>
+          </Link>
           <div
             className={styles.InputDiv}
             style={value ? { display: "flex" } : { display: "none" }}
@@ -85,7 +87,7 @@ const Navbar = () => {
                 </button>
                 <div className={styles.dropDownContent}>
                   {Inspirations.map((elem) => (
-                    <Link key={elem.title} to={`/${elem.to}`}>
+                    <Link key={elem.title} to={`${elem.to}`}>
                       <div key={elem.title} className={styles.DropDownLink}>
                         {elem.title}
                       </div>
@@ -114,9 +116,9 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
-            <div className={styles.Linktab} onClick={() => handleSignIn()}>
-              Sign in
-            </div>
+            <Box className={styles.Linktab}>
+              <LoginModal isOpen={isOpen} onOpen={onOpen} onClose={onClose} />
+            </Box>
           </div>
         </div>
 

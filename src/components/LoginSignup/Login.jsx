@@ -17,14 +17,17 @@ import {
   Box,
   Checkbox,
   Link,
+  HStack,
+  Spacer,
 } from "@chakra-ui/react";
 import react, { useState } from "react";
 import { getDatafromLocalStorage } from "../../utils/localstorage";
 import { useDispatch, useSelector } from "react-redux";
 import { loginAPI } from "../../Redux/AuthReducer/action";
+import SignupModal from "./Signup";
 
-const LoginModal = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+const LoginModal = ({ isOpen, onOpen, onClose }) => {
+  // const { isOpen, onOpen, onClose } = useDisclosure();
   const dispatch = useDispatch();
   const [creds, setCreds] = useState({
     email: "",
@@ -44,9 +47,9 @@ const LoginModal = () => {
 
   return (
     <>
-      <Button mt="200px" onClick={onOpen}>
+      <Text cursor="pointer" onClick={onOpen}>
         Login
-      </Button>
+      </Text>
 
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
@@ -95,9 +98,10 @@ const LoginModal = () => {
               <Button onClick={loginHandler} w="90%" bg="crimson" color="white">
                 Login
               </Button>
-              <Text>
-                Don't have an account ? <Link color="blue">Sign Up</Link>
-              </Text>
+              <HStack display="flex" justifyContent="spaceBetween">
+                <Text>Dont have account ?</Text>
+                <SignupModal />
+              </HStack>
             </VStack>
           </ModalBody>
         </ModalContent>

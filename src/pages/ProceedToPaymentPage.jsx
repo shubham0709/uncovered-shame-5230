@@ -1,12 +1,20 @@
 import React from 'react'
 import styles from "../Styles/ProceedToPaymentPage.module.css"
 import {state} from "../data/state"
-import { Button, Checkbox, Input, Select } from '@chakra-ui/react'
+import { Button, Checkbox, Input, Select, useDisclosure } from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
 import { ArrowForwardIcon } from '@chakra-ui/icons'
+import { ScrollingExample } from '../components/PaymentBox/Payment'
 
 const ProceedToPaymentPage = () => {
-  return (
+    // const {onOpen} = useDisclosure()
+    let {description,duration,image,place,price} = JSON.parse(localStorage.getItem("bookingAmount")) || {}
+    let {amount,contact,date,departureCity,email,typeOfRoom,username} = JSON.parse(localStorage.getItem("userDetails")) || {}
+    // for(let i=0;i<ArrowForwardIcon.length;i++){
+        
+    // }
+    // const tax = 
+    return (
     <div>
         <div className={styles.navbarbackground}></div>
         <div  className={styles.ProceedToPaymentPageWrapper}>
@@ -14,7 +22,7 @@ const ProceedToPaymentPage = () => {
               <div className={styles.left}>
                 <div className={styles.topSectionLeft}>
                     <div className={styles.leftTopSection}>
-                        <img className={styles.imageC} src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1645595596_image_cover_b_2.jpg" />
+                        <img className={styles.imageC} src={image} />
                     </div>
                     <div>
                         <p className={styles.priceMainHead}>Embark on an Adventure with Night Safari & Cycle Safari as You Spot Tigers | Mandaal Corbett</p>
@@ -30,57 +38,57 @@ const ProceedToPaymentPage = () => {
                     <div className={styles.detailsrowwrapper}>
                         <div className={styles.detailscolWrapper}>
                             <p className={styles.title}>Full Name</p>
-                            <p className={styles.custDetails}>Rohit Kumar Gupta</p>
+                            <p className={styles.custDetails}>{username}</p>
                         </div>
                         <div className={styles.detailscolWrapper}>
                             <p className={styles.title}>Email</p>
-                            <p className={styles.custDetails}>Rohit Kumar Gupta</p>
+                            <p className={styles.custDetails}>{email}</p>
                         </div>
                     </div>
                     <div className={styles.detailsrowwrapper}>
                         <div className={styles.detailscolWrapper}>
                             <p className={styles.title}>Contact</p>
-                            <p className={styles.custDetails}>Rohit Kumar Gupta</p>
+                            <p className={styles.custDetails}>{contact}</p>
                         </div>
                         <div className={styles.detailscolWrapper}>
                             <p className={styles.title}>Destination</p>
-                            <p className={styles.custDetails}>Rohit Kumar Gupta</p>
+                            <p className={styles.custDetails}>{place}</p>
                         </div>
                     </div>
                     <div className={styles.detailsrowwrapper}>
                         <div className={styles.detailscolWrapper}>
                             <p className={styles.title}>Departure City</p>
-                            <p className={styles.custDetails}>Rohit Kumar Gupta</p>
+                            <p className={styles.custDetails}>{departureCity}</p>
                         </div>
                         <div className={styles.detailscolWrapper}>
                             <p className={styles.title}>Check-In date</p>
-                            <p className={styles.custDetails}>Rohit Kumar Gupta</p>
+                            <p className={styles.custDetails}>{date}</p>
                         </div>
                     </div>
                     <div className={styles.detailsrowwrapper}>
                         <div className={styles.detailscolWrapper}>
                             <p className={styles.title}>Check-Out Date</p>
-                            <p className={styles.custDetails}>Rohit Kumar Gupta</p>
+                            <p className={styles.custDetails}>{date}</p>
                         </div>
                         <div className={styles.detailscolWrapper}>
                             <p className={styles.title}>Durations</p>
-                            <p className={styles.custDetails}>Rohit Kumar Gupta</p>
+                            <p className={styles.custDetails}>{duration}</p>
                         </div>
                     </div>
                     <div className={styles.detailsrowwrapper}>
                         <div className={styles.detailscolWrapper}>
-                            <p className={styles.title}>Room type</p>
+                            <p className={styles.title}>Single</p>
                             <p className={styles.custDetails}>Rohit Kumar Gupta</p>
                         </div>
                         <div className={styles.detailscolWrapper}>
                             <p className={styles.title}>Number of People</p>
-                            <p className={styles.custDetails}>Rohit Kumar Gupta</p>
+                            <p className={styles.custDetails}>2 Adults</p>
                         </div>
                     </div>
                     <div className={styles.detailsrowwrapper}>
                         <div className={styles.detailscolWrapper}>
                             <p className={styles.title}>Amount</p>
-                            <p className={styles.custDetails}>$ 10000</p>
+                            <p className={styles.custDetails}>{amount}</p>
                         </div>
                     </div>
                     
@@ -102,13 +110,13 @@ const ProceedToPaymentPage = () => {
                               <h3 className={styles.priceMainHead}>Price details</h3>
                               <div className={styles.AmountFlex}>
                                   <p className={styles.text}>Total Amount</p>
-                                  <p className={styles.DigitAmount}>$ 14,300</p>
+                                  <p className={styles.DigitAmount}>{amount}</p>
                               </div>
                          </div>
 
                          <div className={styles.TaxDivWrapper}>
                             <p className={styles.DigitAmount}>Tax</p>
-                            <p className={styles.DigitAmount} style={{color:"#2f9bdb"}}> + $75</p>
+                            <p className={styles.DigitAmount} style={{color:"#2f9bdb"}}> {Number(amount)*.18}</p>
                          </div>
 
                          <div>
@@ -139,9 +147,14 @@ const ProceedToPaymentPage = () => {
                             </div>
                          </div>
 
-                         <div className={styles.buttonWrapper}>
-                                <button className={styles.Paybutton}>Proceed to pay $14754</button>
-                                <ArrowForwardIcon color="white"  fontSize="3xl" margin="5px" />
+                           <div className={styles.buttonWrapper}>
+                               <ScrollingExample  
+                                 className={styles.Paybutton} 
+                                 amount = {(Number(amount) + Number(amount)*.18).toFixed(2)} 
+                                 email={email}
+                                 contact={contact}
+                                 />
+                        
                          </div>
                     </div>
                 </div>
