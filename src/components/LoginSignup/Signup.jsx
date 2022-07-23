@@ -26,10 +26,12 @@ import {
   saveDataToLocalStorage,
 } from "../../utils/localstorage";
 import { registerAPI } from "../../Redux/AuthReducer/action";
+import { useNavigate } from "react-router-dom";
 
 const SignupModal = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const [creds, setCreds] = useState({
     name: "",
     email: "",
@@ -47,6 +49,7 @@ const SignupModal = () => {
   const signupHandler = () => {
     dispatch(registerAPI(creds));
     onClose();
+    navigate("/");
   };
 
   return (
@@ -81,6 +84,7 @@ const SignupModal = () => {
               </Button>
               <Text>OR</Text>
               <Input
+                required
                 value={creds.name}
                 w="90%"
                 name="name"
@@ -88,6 +92,7 @@ const SignupModal = () => {
                 onChange={changeHandler}
               />
               <Input
+                required
                 value={creds.email}
                 w="90%"
                 name="email"
@@ -95,6 +100,7 @@ const SignupModal = () => {
                 onChange={changeHandler}
               />
               <Input
+                required
                 value={creds.password}
                 w="90%"
                 name="password"
@@ -112,6 +118,7 @@ const SignupModal = () => {
                 w="90%"
                 placeholder="India(+91)"
                 onChange={changeHandler}
+                required
               >
                 <option value="91">India (+91)</option>
                 <option value="1">United States (+1)</option>
