@@ -22,7 +22,10 @@ const ProceedToPaymentPage = () => {
   let { amount, contact, date, departureCity, email, typeOfRoom, username } =
     JSON.parse(localStorage.getItem("userDetails")) || {};
   // for(let i=0;i<ArrowForwardIcon.length;i++){
-
+  let days = +duration[0];
+  let checkoutDate = date.split("-");
+  checkoutDate[2] = Number(checkoutDate[2]) + days;
+  checkoutDate = checkoutDate.join("-");
   // }
   // const tax =
   return (
@@ -91,7 +94,7 @@ const ProceedToPaymentPage = () => {
               <div className={styles.detailsrowwrapper}>
                 <div className={styles.detailscolWrapper}>
                   <p className={styles.title}>Check-Out Date</p>
-                  <p className={styles.custDetails}>{date}</p>
+                  <p className={styles.custDetails}>{checkoutDate}</p>
                 </div>
                 <div className={styles.detailscolWrapper}>
                   <p className={styles.title}>Durations</p>
