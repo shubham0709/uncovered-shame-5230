@@ -19,3 +19,11 @@
 .Statement{
     margin-top: 80px ;
 }
+.flexDescrDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.semiBold{
+    font-weight: 600;
+}

@@ -26,24 +26,21 @@ const Processing = () => {
           You might have received a notification
         </p>
 
-        <span
-          style={{ fontSize: "18px", fontWeight: "600", marginTop: "20px" }}
+         
+          <div
+          style={{ fontSize: "18px", fontWeight: "600", marginTop: "30px", textAlign:'center'}}
         >
           Please make payment !
-        </span>
+        </div>
+        <div className={styles.flexDescrDiv}>
 
-        <p style={{ marginTop: "30px" }}>
-          Please do not
-          <span style={{ fontSize: "18px", fontWeight: "600" }}>
-            "refresh"
-          </span>{" "}
-          the page or click on the
-          <span style={{ fontSize: "18px", fontWeight: "600" }}>"Back"</span> or
-          <span style={{ fontSize: "18px", fontWeight: "600" }}>
-            "Close"
-          </span>{" "}
-          button of your browser
-        </p>
+           <span>Please do not</span>
+           <span className={styles.semiBold}>"refresh"</span>
+           {" "}
+           <span>the page or click on the</span>
+           <span className={styles.semiBold} >"Back"</span> or<span className={styles.semiBold} >
+            "Close" </span>{" "}<span>button of your browser</span>
+        </div>
       </div>
     </div>
   ) : (
