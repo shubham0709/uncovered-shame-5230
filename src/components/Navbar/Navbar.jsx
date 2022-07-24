@@ -96,7 +96,9 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
-            <div className={styles.Linktab}>Forum</div>
+            <Link to="/forum" className={styles.Linktab}>
+              Forum
+            </Link>
             <Link to="/packages" className={styles.Linktab}>
               Packages
             </Link>
