@@ -41,13 +41,16 @@ const SuccessfulBooking = () => {
                 <div>
                     <p className={styles.simpleText}>We received your order and payment both successfully. Now we will snd your orered document with given time period.</p>
                     <p className={styles.simpleText}>Our standard delivery time period is 12-24 hours whereas urgent order time period may vary from 6-8 hours</p>
-                    <p className={styles.simpleText}><span style={{fontWeight:"700"}}>FYI: </span>Proper company invoice already sent to your email address.</p>
+                    <div style={{display:'flex',margin:'auto',justifyContent:'center'}}>
+                    <span style={{fontWeight:"700",marginTop:'7px'}}>FYI: </span>
+                    <p className={styles.simpleText}>Proper company invoice already sent to your email address.</p>
+                    </div>
 
                 </div>
                 <div className={styles.lastdiv}>
                     <p className={styles.timer}> you will be redirecting To HomePage in: </p>
                     <p className={styles.timer}> {time} seconds</p>
-                    <button className={styles.LastButton} onClick={handleDirection}>Go TO HomePage</button>
+                    <button className={styles.LastButton} onClick={handleDirection}>Go To HomePage</button>
                 </div>
       </div>
     )
