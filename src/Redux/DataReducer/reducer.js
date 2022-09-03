@@ -12,6 +12,7 @@ const initialState = {
 
 export const reducer = (state = initialState, action) => {
     let { type, payload } = action;
+    console.log(payload);
     switch (type) {
         case GET_DATA_LOADING: return {
             ...state,
